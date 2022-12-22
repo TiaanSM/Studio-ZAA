@@ -1,12 +1,14 @@
-import './App.css'
+import styles from './App.module.css';
+import Header from './components/Header';
 
 
 function App() {
-  // pestiside chrome extension - to view layout of a website.
+
+
 
   return (
-    <div className="App">
-       
+    <div className={styles.app}>
+        <Header />
     </div>
   )
 }
