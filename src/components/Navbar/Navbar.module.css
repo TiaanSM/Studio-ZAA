@@ -1,0 +1,36 @@
+.nav {
+    width: 3rem;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: calc(100vw - 3rem);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.established {
+    display: inline-block;
+    width: 5rem;
+    transform: rotate(-90deg);
+    font-family: sans-serif;
+}
+
+.hamburgerIcon {
+    transform: rotate(-90deg);
+}
+
+.scrollProgress {
+    width: 5rem;
+    transform: rotate(-90deg);
+    font-family: sans-serif;
+}

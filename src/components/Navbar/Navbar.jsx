@@ -1,4 +1,6 @@
 import styles from './Navbar.module.css';
+import { Divide as Hamburger } from 'hamburger-react';
+import { useState } from 'react';
 
 const Navbar = () => {
     
@@ -6,13 +8,23 @@ const Navbar = () => {
     // scroll progress indication
     // onClick navbar stays
     // onClick open nav fades in
+    const [openHamburger, setOpenHamburger] = useState(false);
 
   return (
-    <nav>
-        <div>
-            <p>Est. 2022</p>
-            <i>Hamburger icon</i>
-            <p>0%</p>
+    <nav className={styles.nav}>
+        <div className={styles.container}>
+            <p className={styles.established}>Est. 2022</p>
+            <span className={styles.hamburgerIcon}>
+              <Hamburger 
+                toggled={openHamburger} 
+                toggle={setOpenHamburger} 
+                size={28} 
+                distance="sm" 
+                label="Show menu" 
+                rounded
+              />
+            </span>
+            <p className={styles.scrollProgress}>0%</p>
         </div>
     </nav>
   )

@@ -1,5 +1,6 @@
-import styles from './App.module.css';
-import Header from './components/Header';
+import './App.css';
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
 
 
 function App() {
@@ -7,8 +8,8 @@ function App() {
 
 
   return (
-    <div className={styles.app}>
-        <Header />
+    <div>
+        <Navbar />
     </div>
   )
 }
