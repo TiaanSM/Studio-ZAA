@@ -2,7 +2,7 @@ import styles from './Navbar.module.css';
 import { Divide as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = (props) => {
     
     // hamburger icon
     // scroll progress indication
@@ -24,7 +24,7 @@ const Navbar = () => {
                 rounded
               />
             </span>
-            <p className={styles.scrollProgress}>0%</p>
+            <p className={styles.scrollProgress}>{`${props.scrollProgress}%`}</p>
         </div>
     </nav>
   )
