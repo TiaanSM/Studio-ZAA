@@ -5,7 +5,6 @@ import { useState } from 'react';
 const Navbar = (props) => {
     
     // hamburger icon
-    // scroll progress indication
     // onClick navbar stays
     // onClick open nav fades in
     const [openHamburger, setOpenHamburger] = useState(false);
@@ -25,6 +24,20 @@ const Navbar = (props) => {
               />
             </span>
             <p className={styles.scrollProgress}>{`${props.scrollProgress}%`}</p>
+        </div>
+        <div className={styles.openMenu}>
+          <div className={styles.contactLink}>
+            Contact
+          </div>
+          <div className={styles.journalLink}>
+            Journal
+          </div>
+          <div className={styles.projectsLink}>
+            Projects
+          </div>
+          <div className={styles.aboutLink}>
+            About
+          </div>
         </div>
     </nav>
   )

@@ -17,6 +17,7 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    border: 1px solid rgb(190, 190, 190);
 }
 
 .established {
@@ -34,4 +35,76 @@
     width: 5rem;
     transform: rotate(-90deg);
     font-family: sans-serif;
+}
+
+.openMenu {
+    width: 1020px;
+    height: 100vh;
+    background-color: whitesmoke;
+    position: absolute;
+    right: 3rem;
+    border-left: 1px solid rgb(190, 190, 190);
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.contactLink {
+    width: 1019px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: whitesmoke;
+    transition: all 0.3s ease;
+}
+.contactLink:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.journalLink {
+    width: 760px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid rgb(190, 190, 190);
+    border-bottom: 1px solid rgb(190, 190, 190);
+    background-color: whitesmoke;
+    transition: all 0.3s ease;
+}
+.journalLink:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.projectsLink {
+    width: 510px;
+    height: 330px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid rgb(190, 190, 190);
+    border-bottom: 1px solid rgb(190, 190, 190);
+    background-color: whitesmoke;
+    transition: all 0.3s ease;
+}
+.projectsLink:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.aboutLink {
+    width: 250px;
+    height: 165px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid rgb(190, 190, 190);
+    border-bottom: 1px solid rgb(190, 190, 190);
+    background-color: whitesmoke;
+    transition: all 0.3s ease;
+}
+.aboutLink:hover {
+    background-color: orangered;
+    color: white;
 }

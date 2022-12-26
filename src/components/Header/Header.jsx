@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div>LOGO</div>
+      <div>HEADER</div>
       <p>DESC</p>
       <h1>TITLE</h1>
         <img src="" alt="" />
