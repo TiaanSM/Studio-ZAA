@@ -25,7 +25,8 @@ const Navbar = (props) => {
             </span>
             <p className={styles.scrollProgress}>{`${props.scrollProgress}%`}</p>
         </div>
-        <div className={styles.openMenu}>
+        
+        <div className={openHamburger ? styles.openMenu : styles.closeMenu}>
           <div className={styles.contactLink}>
             Contact
           </div>
@@ -39,6 +40,7 @@ const Navbar = (props) => {
             About
           </div>
         </div>
+        
     </nav>
   )
 }
