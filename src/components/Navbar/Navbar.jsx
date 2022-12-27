@@ -28,16 +28,24 @@ const Navbar = (props) => {
         
         <div className={openHamburger ? styles.openMenu : styles.closeMenu}>
           <div className={styles.contactLink}>
-            Contact
+            <span className={styles.linkText}>
+              <p>Contact</p>
+            </span>
           </div>
           <div className={styles.journalLink}>
-            Journal
+          <span className={styles.linkText}>
+              <p>Journal</p>
+            </span>
           </div>
           <div className={styles.projectsLink}>
-            Projects
+          <span className={styles.linkText}>
+              <p>Projects</p>
+            </span>
           </div>
           <div className={styles.aboutLink}>
-            About
+          <span className={styles.linkText}>
+              <p>About</p>
+            </span>
           </div>
         </div>
         

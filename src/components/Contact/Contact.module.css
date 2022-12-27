@@ -1,9 +1,8 @@
-.header {
-    width: 100vw;
+.contact {
+    width: 900px;
     height: 100vh;
-    color: white;
+    background-color: lightgoldenrodyellow;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-

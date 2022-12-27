@@ -3,8 +3,10 @@ import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Intro from './components/Introduction/Intro';
 import Projects from './components/Projects/Projects';
+import Section from './components/Section/Section';
+import Contact from './components/Contact/Contact';
 import useScrollPercentage from './components/useScrollPercentage';
-import { ParallaxProvider } from 'react-scroll-parallax';
+
 
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
     <Navbar scrollProgress={scrollPercentage} />
       <div className="scroll-container" ref={scrollRef} >
         <div className="content-container">
-      <ParallaxProvider scrollAxis='horizontal'>
+      
       
         <Header />
         
@@ -27,7 +29,10 @@ function App() {
         
         <Projects />
 
-        </ParallaxProvider>
+        <Section />
+
+        <Contact />
+        
         </div>
       </div>
     </div>

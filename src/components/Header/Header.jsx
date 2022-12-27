@@ -1,6 +1,5 @@
 import styles from './Header.module.css';
-import image from '../../assets/img/image1.png';
-import { Parallax } from 'react-scroll-parallax';
+
 
 const Header = () => {
 

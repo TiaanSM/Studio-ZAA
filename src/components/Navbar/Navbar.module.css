@@ -72,6 +72,7 @@
     background-color: whitesmoke;
     transition: all 0.3s ease;
     animation: openNav 0.5s ease-in forwards;
+    cursor: pointer;
 }
 .contactLink:hover {
     background-color: orangered;
@@ -89,6 +90,7 @@
     background-color: whitesmoke;
     transition: all 0.3s ease;
     animation: openNav 0.5s ease-in forwards;
+    cursor: pointer;
 }
 .journalLink:hover {
     background-color: orangered;
@@ -106,6 +108,7 @@
     background-color: whitesmoke;
     transition: all 0.3s ease;
     animation: openNav 0.5s ease-in forwards;
+    cursor: pointer;
 }
 .projectsLink:hover {
     background-color: orangered;
@@ -123,10 +126,27 @@
     background-color: whitesmoke;
     transition: all 0.3s ease;
     animation: openNav 0.5s ease-in forwards;
+    cursor: pointer;
 }
 .aboutLink:hover {
     background-color: orangered;
     color: white;
+}
+
+.linkText {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.linkText > p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+    font-size: 1.4rem;
+    font-weight: 300;
 }
 
 

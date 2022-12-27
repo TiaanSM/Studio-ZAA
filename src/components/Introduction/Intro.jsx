@@ -1,8 +1,11 @@
 import styles from './Intro.module.css';
 
 const Intro = () => {
+
+  // 
+
   return (
-    <section>
+    <section className={styles.intro}>
         Intro
     </section>
   )
