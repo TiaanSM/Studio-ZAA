@@ -1,4 +1,5 @@
 import styles from './Header.module.css';
+import image from '../../assets/img/image1.png';
 import { Parallax } from 'react-scroll-parallax';
 
 const Header = () => {
@@ -9,17 +10,19 @@ const Header = () => {
   // bottom title
 
   return (
+   
     <header className={styles.header}>
-      <Parallax speed={10}>
-       
-      <div>HEADER</div>
-      <p>DESC</p>
-      <h1>TITLE</h1>
+     
+      HEADER
       
-        <img src="" alt="" />
-    </Parallax>
     </header>
+    
   )
 }
 
 export default Header
+
+
+/*
+<img src={image} className={styles.image1} alt="" />
+*/

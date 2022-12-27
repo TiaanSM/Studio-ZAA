@@ -20,9 +20,11 @@ function App() {
       <div className="scroll-container" ref={scrollRef} >
         <div className="content-container">
       <ParallaxProvider scrollAxis='horizontal'>
-        
+      
         <Header />
+        
         <Intro />
+        
         <Projects />
 
         </ParallaxProvider>

@@ -1,4 +1,6 @@
 section {
     width: 600px;
+    height: 100vh;
     background-color: lightblue;
+    z-index: 5;
 }
