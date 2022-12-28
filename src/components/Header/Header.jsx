@@ -1,6 +1,5 @@
 import styles from './Header.module.css';
 
-
 const Header = () => {
 
   // image
@@ -9,13 +8,12 @@ const Header = () => {
   // bottom title
 
   return (
-   
-    <header className={styles.header}>
-     
-      HEADER
-      
-    </header>
-    
+   <header className={styles.header}>
+    <i>LOGO</i>
+      <img src="" alt="" />
+      <h1>FRONT END DEVELOPER</h1>
+      <p>DESC FOR TOP RIGHT??</p>
+   </header>
   )
 }
 
