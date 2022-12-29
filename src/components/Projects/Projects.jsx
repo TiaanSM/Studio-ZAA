@@ -4,21 +4,21 @@ const Projects = () => {
   return (
     <main className={styles.main}>
 
-        <div>
-          <img src="" alt="" />
-          <a href="">LINK</a>
-          <a href="">LINK</a>
+        <div className={styles.container}>
+          <img src="" alt="" className={styles.projectImage} />
+          <p className={styles.projectName}>Project name</p>
+          <a href="" className={styles.link}>View Project</a>
         </div>
         
-        <div>
-          <img src="" alt="" />
-          <a href="">LINK</a>
-          <a href="">LINK</a>
+        <div className={styles.container}>
+          <img src="" alt="" className={styles.projectImage}  />
+          <p className={styles.projectName}>Project name</p>
+          <a href="" className={styles.link}>View Project</a>         
         </div>
-        <div>
-          <img src="" alt="" />
-          <a href="">LINK</a>
-          <a href="">LINK</a>
+        <div className={styles.container}>
+          <img src="" alt="" className={styles.projectImage}  />
+          <p className={styles.projectName}>Project name</p>
+          <a href="" className={styles.link}>View Project</a>         
         </div>
 
     </main>
