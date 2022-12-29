@@ -1,4 +1,5 @@
 import styles from './Header.module.css';
+import headerImage from '../../assets/img/headerImg.jpg';
 
 const Header = () => {
 
@@ -9,10 +10,10 @@ const Header = () => {
 
   return (
    <header className={styles.header}>
-    <i>LOGO</i>
-      <img src="" alt="" />
-      <h1>FRONT END DEVELOPER</h1>
-      <p>DESC FOR TOP RIGHT??</p>
+    <a href="/" className={styles.logo}>LOGO</a>
+      <img className={styles.image} src={headerImage} alt="" />
+      <h1 className={styles.title}>Building Beyond</h1>
+      <p className={styles.desc}>We are a South African architecture and design studio with a global reputation for creating innovative spaces.</p>
    </header>
   )
 }

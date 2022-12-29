@@ -7,15 +7,18 @@ const Intro = () => {
   return (
     <section className={styles.intro}>
 
-      <div>
-        <h3></h3>
-        <img src="" alt="" />
+      <div className={styles.topContainer}>
+        <h3 className={styles.title}>Introduction</h3>
+        <img src="" alt="" className={styles.introImage} />
       </div>
 
-      <div>
-        <h1>TITLE</h1>
-        <p>DESC</p>
-        <a href="">Link</a>
+      <div className={styles.bottomContainer}>
+        <h1 className={styles.heading}>Established 2022</h1>
+        <p className={styles.desc}>We are an architectural studio that believes in going further. 
+          Being bold. Exploring the new. Where the surprising delights the 
+          mind. Where people love to live, work and play. Let's start 
+          building beyond.</p>
+        <a href="" className={styles.link}>Learn More About Us</a>
       </div>
 
     </section>

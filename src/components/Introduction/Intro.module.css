@@ -1,8 +1,54 @@
 .intro {
     width: 600px;
     height: 100vh;
-    background-color: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: whitesmoke;
+    border-right: 1px solid rgb(190, 190, 190);
+    position: relative;
+}
+
+.topContainer {
+    width: 100%;
+    height: 430px;
+    position: relative;
+}
+
+.title {
+    font-size: 15px;
+    font-family: sans-serif;
+    width: 5.5rem;
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+}
+
+.introImage {
+    width: 9rem;
+    height: 11.5rem;
+    background-color: black;
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+}
+
+.bottomContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.heading {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 2rem 3rem 1rem 3rem;
+}
+
+.desc {
+    width: 30rem;
+    font-size: 15px;
+    padding: 0rem 3rem 1rem 3rem;
+}
+
+.link {
+    padding: 0rem 3rem 0rem 3rem;
+    color: black;
 }
