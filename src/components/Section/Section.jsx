@@ -1,4 +1,5 @@
 import styles from './Section.module.css';
+import sectionImage from '../../assets/img/sectionImage.jpg';
 
 const Section = () => {
   return (
@@ -17,7 +18,7 @@ const Section = () => {
         <a href="" className={styles.projectLink}>View All Projects</a>
       </div>
 
-      <img src="" alt="" className={styles.mainImage}/>
+      <img src={sectionImage} alt="" className={styles.mainImage}/>
 
       <div className={styles.journalContainer}>
 

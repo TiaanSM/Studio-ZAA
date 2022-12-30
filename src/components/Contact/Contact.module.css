@@ -16,7 +16,7 @@
 
 .image1 {
     width: 500px;
-    height: 500px;
+    height: 535px;
     background-color: black;
 }
 
@@ -29,13 +29,15 @@
 
 .image2 {
     width: 490px;
-    height: 210px;
+    height: 222px;
     background-color: black;
+    object-fit: cover;
 }
 
 .articleTitle {
     margin-top: 6px;
     margin-bottom: 6px;
+    font-weight: 600;
 }
 
 .articleLink {

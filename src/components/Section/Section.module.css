@@ -1,16 +1,15 @@
 .section {
     width: 154vw;
     height: 100vh;
-    background-color: lightgray;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: whitesmoke;
 }
 
 .container {
     width: 700px;
     height: 100vh;
-    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +44,7 @@
 
 .projectLink {
     position: absolute;
-    bottom: 2rem;
+    bottom: 4rem;
     color: black;
 }
 
@@ -54,6 +53,7 @@
     width: 600px;
     height: 100vh;
     background-color: black;
+    object-fit: cover;
 }
 
 

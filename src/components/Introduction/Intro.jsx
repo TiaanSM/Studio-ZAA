@@ -1,4 +1,5 @@
 import styles from './Intro.module.css';
+import introImage from '../../assets/img/introImage.jpg';
 
 const Intro = () => {
 
@@ -9,7 +10,7 @@ const Intro = () => {
 
       <div className={styles.topContainer}>
         <h3 className={styles.title}>Introduction</h3>
-        <img src="" alt="" className={styles.introImage} />
+        <img src={introImage} alt="" className={styles.introImage} />
       </div>
 
       <div className={styles.bottomContainer}>
