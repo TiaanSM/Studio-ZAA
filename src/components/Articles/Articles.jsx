@@ -1,11 +1,11 @@
-import styles from './Contact.module.css';
+import styles from './Articles.module.css';
 import articleImage from '../../assets/img/projectImage2.jpg';
 import articleImage2 from '../../assets/img/articleImage2.jpg';
 import articleImage3 from '../../assets/img/projectImage3.jpg';
 
-const Contact = () => {
+const Articles = () => {
   return (
-    <div className={styles.contact}>
+    <div className={styles.articles}>
 
       <div className={styles.container}>
         <img src={articleImage2} alt="" className={styles.image1} />
@@ -31,4 +31,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Articles

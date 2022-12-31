@@ -2,7 +2,6 @@
     width: 100vw;
     height: 100vh;
     background-color: lightgray;
-    color: black;
     position: relative;
 }
 
@@ -41,4 +40,11 @@
     font-size: 1rem;
     font-weight: 300;
     font-family: sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
+    .image {
+        filter: brightness(90%);
+    }
 }

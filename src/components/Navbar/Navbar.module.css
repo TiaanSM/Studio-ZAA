@@ -173,3 +173,36 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .nav {
+        width: calc(100vw - 16px);
+        height: 8rem;
+        background-color: rgba(211, 211, 211, 0.377);
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        border: none;
+    }
+
+    .established {
+        transform: rotate(0);
+    }
+
+    .hamburgerIcon {
+        transform: rotate(0);
+    }
+
+    .scrollProgress {
+        display: none;
+    }
+
+    
+}

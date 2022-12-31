@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import Intro from './components/Introduction/Intro';
 import Projects from './components/Projects/Projects';
 import Section from './components/Section/Section';
-import Contact from './components/Contact/Contact';
+import Articles from './components/Articles/Articles';
 import useScrollPercentage from './components/useScrollPercentage';
 
 
@@ -31,7 +31,7 @@ function App() {
 
         <Section />
 
-        <Contact />
+        <Articles />
         
         </div>
       </div>
