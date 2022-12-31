@@ -31,3 +31,39 @@
 .link {
     color: black;
 }
+
+@media screen and (max-width: 768px) {
+    .main {
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 5rem;
+        border-bottom: 1px solid rgb(190, 190, 190);
+    }
+
+    .container {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 4rem;
+    }
+
+    .projectImage {
+        width: calc(100vw - 6rem);
+    }
+
+    .projectName {
+        position: relative;
+        right: 18.1rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .link {
+        position: relative;
+        right: 18.3rem;
+    }
+}

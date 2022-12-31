@@ -86,3 +86,65 @@
     bottom: 0;
     left: 3rem;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .section {
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        top: 5rem;
+    }
+
+    .heading {
+        padding-inline: 3rem;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        padding-top: 15rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .descLink {
+        font-size: 2rem;
+        padding-bottom: 12rem;
+    }
+
+    .a {
+        text-decoration: none;
+        border-bottom: 1px solid black;
+    }
+
+    .projectLink {
+        position: relative;
+        bottom: 0;
+        padding-bottom: 5rem;
+    }
+
+    .mainImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .journalContainer {
+        width: 100%;
+        height: 1000px;
+    }
+
+    .journalHeading {
+        padding-top: 6rem;
+        font-size: 3.5rem;
+        line-height: 3rem;
+        width: auto;
+        padding-inline: 3rem;
+        padding-bottom: 4rem;
+    }
+}

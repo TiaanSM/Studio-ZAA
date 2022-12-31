@@ -55,7 +55,58 @@
 
 
 @media screen and (max-width: 768px) {
+
     .intro {
         width: 100vw;
+        height: auto;
+    }
+
+    .topContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 200px;
+    }
+
+    .title {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-top: 6rem;
+        padding-left: 3rem;
+    }
+
+    .introImage {
+        width: 428px;
+        height: 557px;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 6rem;
+        margin-right: 3rem;
+    }
+
+    .bottomContainer {
+        width: 100%;
+        height: auto;
+        padding-bottom: 4rem;
+        border-bottom: 1px solid rgb(190, 190, 190);
+    }
+
+    .heading {
+        font-size: 3.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .desc {
+        width: auto;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        padding-bottom: 4rem;
+    }
+
+    .link {
+        padding-bottom: 0rem;
     }
 }

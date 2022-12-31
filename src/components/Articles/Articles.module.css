@@ -43,3 +43,59 @@
 .articleLink {
     color: black;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .articles {
+        width: calc(100vw - 16px);
+        height: auto;
+        flex-direction: column;
+        background-color: #F06446;
+        padding-bottom: 5rem;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .image1 {
+        width: 94%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .articleContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        right: 0;
+        padding-bottom: 3rem;
+    }
+
+    .image2 {
+        width: 94%;
+        height: 400px;
+    }
+
+    .articleTitle {
+        position: relative;
+        right: 15.4rem;
+        color: white;
+        font-size: 1.1rem;
+    }
+
+    .articleLink {
+        position: relative;
+        right: 18.7rem;
+        color: white;
+    }
+}

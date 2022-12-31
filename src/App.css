@@ -10,7 +10,7 @@ body {
     position: relative;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -49,12 +49,12 @@ body::-webkit-scrollbar {
         overflow-x: hidden;
     }
 
-    body::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         display: block;
         background-color: rgb(226, 226, 226);
     }
 
-    body::-webkit-scrollbar-thumb {
+    ::-webkit-scrollbar-thumb {
         background-color: gray;
     }
 
