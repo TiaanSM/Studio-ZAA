@@ -174,36 +174,136 @@
     }
 }
 
+@keyframes openNavMobile {
+    0% {
+        left: -100vw;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes closeNavMobile {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -100vw;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    
     .nav {
-        width: calc(100vw - 16px);
+        width: 100vw;
         height: 8rem;
-        background-color: rgba(211, 211, 211, 0.377);
-        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
         left: 0;
-        top: 0;
+        z-index: 20;
+        background-color: transparent;
     }
 
     .container {
+        width: 100%;
+        height: 100%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         flex-direction: row;
         border: none;
+        background-color: transparent;
+        position: relative;
     }
 
     .established {
-        transform: rotate(0);
         display: none;
+        color: white;
     }
-
+    
     .hamburgerIcon {
         transform: rotate(0);
+        position: absolute;
+        right: 3rem;
+        z-index: 20;
     }
-
+    
     .scrollProgress {
         display: none;
     }
 
-    
+    .openMenu {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(245, 245, 245);
+        position: absolute;
+        left: 0;
+        top: 0px;
+        border: none;
+        animation: openNavMobile 1s ease forwards;
+    }
+
+    .closeMenu {
+        width: 100vw;
+        height: 100vh;
+        background-color: whitesmoke;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        border: none;
+        animation: closeNavMobile 1s ease forwards;
+    }
+
+    .contactLink {
+        width: 100%;
+        height: 4rem;
+        position: relative;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        transition: none;
+        animation: none;
+        cursor: pointer;
+    }
+
+    .journalLink {
+        width: 100%;
+        height: 4rem;
+        position: relative;
+        top: 0;
+        right: 0;
+        border: none;
+        background-color: transparent;
+        transition: none;
+        animation: none;
+        cursor: pointer;
+    }
+
+    .projectsLink {
+        width: 100%;
+        height: 4rem;
+        position: relative;
+        top: 0;
+        right: 0;
+        border: none;
+        background-color: transparent;
+        transition: none;
+        animation: none;
+        cursor: pointer;
+    }
+
+    .aboutLink {
+        width: 100%;
+        height: 4rem;
+        position: relative;
+        top: 0;
+        right: 0;
+        border: none;
+        background-color: transparent;
+        transition: none;
+        animation: none;
+        cursor: pointer;
+    }
 }
