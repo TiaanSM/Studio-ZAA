@@ -1,5 +1,5 @@
 import styles from './Section.module.css';
-import sectionImage from '../../assets/img/sectionImage.jpg';
+import sectionImage from '../../assets/img/sectionImage.webp';
 
 const Section = () => {
   return (

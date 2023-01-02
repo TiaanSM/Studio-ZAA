@@ -1,5 +1,5 @@
 import styles from './Intro.module.css';
-import introImage from '../../assets/img/introImage.jpg';
+import introImage from '../../assets/img/introImage.webp';
 
 const Intro = () => {
 

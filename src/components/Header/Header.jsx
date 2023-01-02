@@ -1,5 +1,5 @@
 import styles from './Header.module.css';
-import headerImage from '../../assets/img/headerImg.jpg';
+import headerImage from '../../assets/img/headerImg.webp';
 
 const Header = () => {
 

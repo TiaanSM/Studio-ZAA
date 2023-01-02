@@ -1,7 +1,7 @@
 import styles from './Articles.module.css';
-import articleImage from '../../assets/img/projectImage2.jpg';
-import articleImage2 from '../../assets/img/articleImage2.jpg';
-import articleImage3 from '../../assets/img/projectImage3.jpg';
+import articleImage from '../../assets/img/projectImage2.webp';
+import articleImage2 from '../../assets/img/articleImage2.webp';
+import articleImage3 from '../../assets/img/projectImage3.webp';
 
 const Articles = () => {
   return (

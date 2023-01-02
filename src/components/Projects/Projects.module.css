@@ -69,3 +69,17 @@
         bottom: 1.4rem;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .projectImage {
+        width: calc(100vw - 3rem);
+    }
+
+    .projectName {
+        left: 1.5rem;
+    }
+
+    .link {
+        left: 1.5rem;
+    }
+}

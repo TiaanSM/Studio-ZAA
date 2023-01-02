@@ -28,6 +28,7 @@
     position: absolute;
     right: 3rem;
     top: 2rem;
+    object-fit: cover;
 }
 
 .bottomContainer {
@@ -78,8 +79,8 @@
     }
 
     .introImage {
-        width: 428px;
-        height: 557px;
+        width: calc(100vw - 45%);
+        height: 32rem;
         position: relative;
         top: 0;
         right: 0;
@@ -108,5 +109,34 @@
 
     .link {
         padding-bottom: 0rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .topContainer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title {
+        width: auto;
+        text-align: center;
+        padding: 0;
+        top: 4rem;
+    }
+
+    .introImage {
+        top: 3rem;
+        width: 90%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .heading {
+        font-size: 2rem;
     }
 }

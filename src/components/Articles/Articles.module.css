@@ -104,3 +104,14 @@
         color: white;
     }
 }
+
+@media screen and (max-width: 400px) {
+
+    .container {
+        width: calc(100vw - 3rem);
+    }
+
+    .articleContainer {
+        width: calc(100vw - 3rem);
+    }
+}

@@ -1,7 +1,7 @@
 import styles from './Projects.module.css';
-import image1 from '../../assets/img/projectImage4.jpg';
-import image2 from '../../assets/img/projectImage5.jpg';
-import image3 from '../../assets/img/projectImage6.jpg';
+import image1 from '../../assets/img/projectImage4.webp';
+import image2 from '../../assets/img/projectImage5.webp';
+import image3 from '../../assets/img/projectImage6.webp';
 
 const Projects = () => {
   return (
