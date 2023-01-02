@@ -49,6 +49,8 @@
         align-items: center;
         flex-direction: column;
         padding-top: 4rem;
+        padding-bottom: 6rem;
+        position: relative;
     }
 
     .projectImage {
@@ -56,14 +58,14 @@
     }
 
     .projectName {
-        position: relative;
-        right: 18.1rem;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
+        position: absolute;
+        left: 3rem;
+        bottom: 2.8rem;
     }
 
     .link {
-        position: relative;
-        right: 18.3rem;
+        position: absolute;
+        left: 3rem;
+        bottom: 1.4rem;
     }
 }

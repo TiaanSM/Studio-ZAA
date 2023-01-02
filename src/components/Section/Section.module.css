@@ -116,6 +116,7 @@
     .descLink {
         font-size: 2rem;
         padding-bottom: 12rem;
+        padding-inline: 1.5rem;
     }
 
     .a {

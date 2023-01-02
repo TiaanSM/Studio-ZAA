@@ -8,21 +8,27 @@ const Navbar = (props) => {
     // onClick navbar stays
     // onClick open nav fades in
     const [openHamburger, setOpenHamburger] = useState(false);
+    
+    const isMobile = window.innerWidth < 768;
 
   return (
     <nav className={styles.nav}>
         <div className={styles.container}>
             <p className={styles.established}>Est. 2022</p>
+
             <span className={styles.hamburgerIcon}>
-              <Hamburger 
-                toggled={openHamburger} 
-                toggle={setOpenHamburger} 
-                size={28} 
-                distance="sm" 
-                label="Show menu" 
-                rounded
-              />
+            <Hamburger 
+              size={isMobile ? 34 : 28}
+              toggled={openHamburger} 
+              toggle={setOpenHamburger}
+              distance='md'
+              label="Show menu"
+              hideOutline={false}
+              rounded
+              color={isMobile ? 'white' : 'black'}
+            />
             </span>
+
             <p className={styles.scrollProgress}>{`${props.scrollProgress}%`}</p>
         </div>
         

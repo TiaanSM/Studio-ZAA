@@ -237,7 +237,7 @@
     .openMenu {
         width: 100vw;
         height: 100vh;
-        background-color: rgb(245, 245, 245);
+        background-color: #3d4442;
         position: absolute;
         left: 0;
         top: 0px;
@@ -248,7 +248,7 @@
     .closeMenu {
         width: 100vw;
         height: 100vh;
-        background-color: whitesmoke;
+        background-color: #3d4442;
         position: absolute;
         left: 0;
         top: 0px;
