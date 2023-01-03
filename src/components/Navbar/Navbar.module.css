@@ -200,7 +200,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: absolute;
+        position: fixed;
         left: 0;
         z-index: 20;
         background-color: transparent;
@@ -227,12 +227,13 @@
         display: block;
         width: auto;
         top: 3rem;
+        z-index: 20;
     }
     
     .hamburgerIcon {
         transform: rotate(0);
         position: fixed;
-        right: 1rem;
+        right: 2rem;
         z-index: 20;
     }
     
@@ -244,11 +245,11 @@
         width: 100vw;
         height: 100vh;
         background-color: #3d4442;
-        position: absolute;
+        position: fixed;
         left: 0;
         top: 0px;
         border: none;
-        animation: openNavMobile 1s ease forwards;
+        animation: openNavMobile 0.5s ease forwards;
     }
 
     .closeMenu {
@@ -259,7 +260,7 @@
         left: 0;
         top: 0px;
         border: none;
-        animation: closeNavMobile 1s ease forwards;
+        animation: closeNavMobile 0.5s ease forwards;
     }
 
     .contactLink {
@@ -311,5 +312,18 @@
         transition: none;
         animation: none;
         cursor: pointer;
+    }
+
+    .contactLink {
+        margin-top: 22rem;
+    }
+
+    .contactLink, .aboutLink, .journalLink, .projectsLink {
+        color: white;
+    }
+
+    .contactLink:hover, .aboutLink:hover, .journalLink:hover, .projectsLink:hover {
+        background-color: transparent;
+        color: whitesmoke;
     }
 }

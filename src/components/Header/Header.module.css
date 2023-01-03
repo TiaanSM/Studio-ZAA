@@ -12,6 +12,14 @@
     filter: brightness(60%);
 }
 
+.imageAnimation {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(60%);
+    animation: zoomOut 0.8s ease-out forwards;
+}
+
 .title {
     width: calc(100% - 3rem);
     height: auto;
@@ -33,7 +41,6 @@
     font-weight: 300;
     font-family: sans-serif;
 }
-
 
 @media (max-width: 768px) {
 
@@ -70,7 +77,11 @@
 @media (max-width: 400px) {
 
     .title {
-        top: 55%;
+        width: auto;
+        position: absolute;
+        height: 3rem;
+        top: 23rem;
+        left: 3rem;
     }
 
     .desc {

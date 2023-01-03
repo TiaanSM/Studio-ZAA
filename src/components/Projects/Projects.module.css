@@ -23,6 +23,15 @@
     object-fit: cover;
 }
 
+.projectImageAnim {
+    width: 100%;
+    height: 520px;
+    background-color: black;
+    margin-top: 1rem;
+    object-fit: cover;
+    transform: scale(2);
+}
+
 .projectName {
     padding: 10px 0 8px 0;
     font-weight: 600;
@@ -30,6 +39,15 @@
 
 .link {
     color: black;
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 @media (max-width: 768px) {
