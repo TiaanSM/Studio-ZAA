@@ -10,7 +10,6 @@ const Header = () => {
 
   return (
    <header className={styles.header}>
-    <a href="/" className={styles.logo}>LOGO</a>
       <img className={styles.image} src={headerImage} alt="" />
       <h1 className={styles.title}>Building Beyond</h1>
       <p className={styles.desc}>We are a South African architecture and design studio with a global reputation for creating innovative spaces.</p>

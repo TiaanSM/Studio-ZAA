@@ -5,14 +5,6 @@
     position: relative;
 }
 
-.logo {
-    position: absolute;
-    color: white;
-    top: 2rem;
-    left: 2rem;
-    z-index: 2;
-}
-
 .image {
     width: 100vw;
     height: 100vh;
@@ -43,7 +35,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     .logo {
         top: 3.25rem;
@@ -75,7 +67,7 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
 
     .title {
         top: 55%;

@@ -45,7 +45,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     .articles {
         width: 100vw;
@@ -105,7 +105,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
 
     .container {
         width: calc(100vw - 3rem);

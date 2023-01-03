@@ -14,7 +14,7 @@ const Navbar = (props) => {
   return (
     <nav className={styles.nav}>
         <div className={styles.container}>
-            <p className={styles.established}>Est. 2022</p>
+            <p className={styles.established}>{isMobile ? 'logo' :'Est. 2022'}</p>
 
             <span className={styles.hamburgerIcon}>
             <Hamburger 

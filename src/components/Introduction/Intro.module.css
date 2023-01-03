@@ -55,7 +55,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     .intro {
         width: 100vw;
@@ -112,7 +112,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
 
     .topContainer {
         justify-content: center;
@@ -134,7 +134,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
 
     .heading {
         font-size: 2rem;

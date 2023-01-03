@@ -192,7 +192,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     
     .nav {
         width: 100vw;
@@ -219,14 +219,20 @@
     }
 
     .established {
-        display: none;
+        font-size: 1.2rem;
+        transform: rotate(0);
         color: white;
+        position: fixed;
+        left: 2rem;
+        display: block;
+        width: auto;
+        top: 3rem;
     }
     
     .hamburgerIcon {
         transform: rotate(0);
-        position: absolute;
-        right: 3rem;
+        position: fixed;
+        right: 1rem;
         z-index: 20;
     }
     
