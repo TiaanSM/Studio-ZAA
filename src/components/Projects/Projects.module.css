@@ -15,21 +15,25 @@
     cursor: pointer;
 }
 
+.imageContainer {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+}
+
 .projectImage {
     width: 100%;
     height: 520px;
-    background-color: black;
-    margin-top: 1rem;
     object-fit: cover;
+    animation: zoomOut 1.5s ease forwards;
+    overflow: hidden;
 }
 
-.projectImageAnim {
+.projectImageA {
     width: 100%;
     height: 520px;
-    background-color: black;
-    margin-top: 1rem;
     object-fit: cover;
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
 .projectName {
@@ -43,7 +47,7 @@
 
 @keyframes zoomOut {
     from {
-        transform: scale(1);
+        transform: scale(1.5);
     }
     to {
         transform: scale(1);

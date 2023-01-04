@@ -14,10 +14,24 @@
     padding-top: 2.5rem;
 }
 
+.imageContainer {
+    width: 500px;
+    height: 535px;
+    overflow: hidden;
+}
+
 .image1 {
     width: 500px;
     height: 535px;
-    background-color: black;
+    object-fit: cover;
+    animation: zoomOut 1.5s ease forwards;
+}
+
+.image1A {
+    width: 500px;
+    height: 535px;
+    object-fit: cover;
+    transform: scale(1.5);
 }
 
 .articleContainer {
@@ -27,11 +41,24 @@
     right: 3rem;
 }
 
+.imageContainer2 {
+    width: 490px;
+    height: 222px;
+    overflow: hidden;
+}
+
 .image2 {
     width: 490px;
     height: 222px;
-    background-color: black;
     object-fit: cover;
+    animation: zoomOut 1.5s ease forwards;
+}
+
+.image2A {
+    width: 490px;
+    height: 222px;
+    object-fit: cover;
+    transform: scale(1.5);
 }
 
 .articleTitle {
@@ -42,6 +69,15 @@
 
 .articleLink {
     color: black;
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1.5);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 
