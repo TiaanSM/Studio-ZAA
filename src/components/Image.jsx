@@ -4,7 +4,7 @@ const Image = (props) => {
 
     const { ref, inView, entry } = useInView({
         /* Optional options */
-        threshold: .30,
+        threshold: .40,
         triggerOnce: true
     });
 

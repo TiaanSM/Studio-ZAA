@@ -8,6 +8,7 @@ import ImageHeading from '../ImageHeading.jsx';
 
 const Articles = () => {
 
+  // images fixed height causing problems, fix to a relative to screen width and height
 
 
   return (

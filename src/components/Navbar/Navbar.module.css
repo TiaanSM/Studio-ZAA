@@ -27,6 +27,7 @@
     transform: rotate(-90deg);
     font-family: sans-serif;
     font-size: 12px;
+    text-decoration: none;
 }
 
 .hamburgerIcon {
@@ -204,6 +205,16 @@
         left: 0;
         z-index: 20;
         background-color: transparent;
+    }
+
+    .logo {
+        width: 100px;
+        height: 55px;
+        position: absolute;
+        top: -0.5rem;
+        left: -1rem;
+        font-size: 1.5rem;
+        z-index: 20;
     }
 
     .container {

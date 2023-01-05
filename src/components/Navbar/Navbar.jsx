@@ -1,6 +1,7 @@
 import styles from './Navbar.module.css';
 import { Divide as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
+import logo from '../../assets/img/Logo.png';
 
 const Navbar = (props) => {
     
@@ -14,7 +15,11 @@ const Navbar = (props) => {
   return (
     <nav className={styles.nav}>
         <div className={styles.container}>
-            <p className={styles.established}>{isMobile ? 'logo' :'Est. 2022'}</p>
+            <a href="/" className={styles.established}>
+              {isMobile 
+              ? <img className={styles.logo} src={logo} alt="logo" /> 
+              :'Est. 2022'}
+            </a>
 
             <span className={styles.hamburgerIcon}>
             <Hamburger 

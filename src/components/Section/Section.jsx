@@ -22,11 +22,11 @@ const Section = () => {
 
       <div className={styles.journalContainer}>
 
-        <h4 className={styles.journalHeading}>Collaborating to create the 
+        <h3 className={styles.journalHeading}>Collaborating to create the 
           surprising with innovation that 
           inspires. Let's work towards 
           something bigger and brighter.
-        </h4>
+        </h3>
         <a href="" className={styles.articleLink}>View All Articles</a>
         <h4 className={styles.journalTitle}>Journal</h4>
       </div>

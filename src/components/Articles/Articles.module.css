@@ -35,29 +35,28 @@
     .articles {
         width: 100vw;
         height: auto;
-        flex-direction: column;
+        grid-template-columns: 1fr;
         background-color: #F06446;
         padding-bottom: 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .container {
-        width: calc(100% - 6rem);
+        width: calc(100% - 3rem);
         height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         position: relative;
-        padding: 0 0 8rem 0;
+    }
+
+    .container:nth-child(1) {
+        padding-left: 0px;
     }
 
     .articleContainer {
-        width: calc(100vw - 6rem);
+        width: calc(100vw - 3rem);
         height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         right: 0;
         padding-bottom: 8rem;
     }
