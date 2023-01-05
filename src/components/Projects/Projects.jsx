@@ -3,16 +3,11 @@ import image1 from '../../assets/img/projectImage4.webp';
 import image2 from '../../assets/img/projectImage5.webp';
 import image3 from '../../assets/img/projectImage6.webp';
 
-import { useInView } from 'react-intersection-observer';
 import Image from '../Image.jsx';
+import ImageHeading from '../ImageHeading.jsx';
 
 const Projects = () => {
 
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
-    threshold: .80,
-    triggerOnce: true
-  });
 
 
   return (
@@ -20,21 +15,23 @@ const Projects = () => {
 
         <div className={styles.container}>
 
-         <Image width='100%' height="520px" src={image1} imagealt="house-image" />
+          <Image width='100%' height="530px" src={image1} imagealt="house-image" />
+          <ImageHeading title="Malbury Ocean View" link="View Project" />
 
-          <p className={styles.projectName}>Project name</p>
-          <a href="" className={styles.link}>View Project</a>
         </div>
         
         <div className={styles.container}>
-         <Image width='100%' height="520px" src={image2} imagealt="house-image" />
-          <p className={styles.projectName}>Project name</p>
-          <a href="" className={styles.link}>View Project</a>         
+
+          <Image width='100%' height="530px" src={image2} imagealt="house-image" />
+          <ImageHeading title="Grover Complex" link="View Project" />
+
         </div>
+
         <div className={styles.container}>
-         <Image width='100%' height="520px" src={image3} imagealt="house-image" />
-          <p className={styles.projectName}>Project name</p>
-          <a href="" className={styles.link}>View Project</a>         
+
+          <Image width='100%' height="530px" src={image3} imagealt="house-image" />
+          <ImageHeading title="Wineland Golf Field" link="View Project" />      
+        
         </div>
 
     </main>

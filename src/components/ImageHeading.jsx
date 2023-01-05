@@ -1,20 +1,14 @@
-import React from 'react'
+import styles from '../components/TextStyles.module.css';
 
 const ImageHeading = (props) => {
 
-    const containerStyles = {};
-
-    const titleStyles = {};
-
-    const linkStyles = {};
-
   return (
 
-    <div style={containerStyles}>
+    <div className={styles.headingContainer}>
 
-        <h4 style={titleStyles}>{props.title}</h4>
+        <h4 className={styles.headingTitle}>{props.title}</h4>
         
-        <a href="" style={linkStyles}>{props.link}</a>
+        <a href="/" className={styles.headingLink}>{props.link}</a>
 
     </div>
 

@@ -3,43 +3,36 @@ import articleImage from '../../assets/img/projectImage2.webp';
 import articleImage2 from '../../assets/img/articleImage2.webp';
 import articleImage3 from '../../assets/img/projectImage3.webp';
 
-import { useInView } from 'react-intersection-observer';
 import Image from '../Image.jsx';
+import ImageHeading from '../ImageHeading.jsx';
 
 const Articles = () => {
 
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
-    threshold: .80,
-    triggerOnce: true
-  });
+
 
   return (
     <div className={styles.articles}>
 
       <div className={styles.container}>
       
-        <Image width='100%' height="520px" src={articleImage} imagealt="house-image" />
-
-        <p className={styles.articleTitle}>Achitecture And Change</p>
-        <a href="" className={styles.articleLink}>Read Article</a>
+        <Image width='100%' height="530px" src={articleImage2} imagealt="house-image" />
+        <ImageHeading title="Multi Level Housing Benefits" link="Read Article" />
+      
       </div>
 
       <div className={styles.container}>
         <div className={styles.articleContainer}>
         
-          <Image width='490px' height="222px" src={articleImage2} imagealt="house-image" />
-
-          <p className={styles.articleTitle}>Achitecture And Change</p>
-          <a href="" className={styles.articleLink}>Read Article</a>
+          <Image width='100%' height="222px" src={articleImage} imagealt="house-image" />
+          <ImageHeading title="Modern Design And Architecture" link="Read Article" />
+        
         </div>
 
         <div className={styles.articleContainer}>
 
-        <Image width='490px' height="222px" src={articleImage3} imagealt="house-image" />
-
-          <p className={styles.articleTitle}>Achitecture And Change</p>
-          <a href="" className={styles.articleLink}>Read Article</a>
+          <Image width='100%' height="222px" src={articleImage3} imagealt="house-image" />
+          <ImageHeading title="Popular Houses Under Three Million" link="Read Article" />
+        
         </div>
 
       </div>
