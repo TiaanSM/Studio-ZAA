@@ -46,7 +46,6 @@
 
     .container {
         width: calc(100% - 3rem);
-        height: auto;
         position: relative;
     }
 
@@ -54,11 +53,15 @@
         padding-left: 0px;
     }
 
+    .container:nth-child(2) {
+        padding-right: 0px;
+    }
+
     .articleContainer {
         width: calc(100vw - 3rem);
         height: auto;
         right: 0;
-        padding-bottom: 8rem;
+        padding-bottom: 3rem;
     }
 }
 

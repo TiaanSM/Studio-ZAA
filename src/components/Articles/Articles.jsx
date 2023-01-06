@@ -17,7 +17,7 @@ const Articles = () => {
       <div className={styles.container}>
       
         <Image width='100%' height="530px" src={articleImage2} imagealt="house-image" />
-        <ImageHeading title="Multi Level Housing Benefits" link="Read Article" />
+        <ImageHeading title="Multi Level Housing Benefits" link="Read Article" color="white" />
       
       </div>
 
@@ -25,14 +25,14 @@ const Articles = () => {
         <div className={styles.articleContainer}>
         
           <Image width='100%' height="222px" src={articleImage} imagealt="house-image" />
-          <ImageHeading title="Modern Design And Architecture" link="Read Article" />
+          <ImageHeading title="Modern Design And Architecture" link="Read Article" color="white" />
         
         </div>
 
         <div className={styles.articleContainer}>
 
           <Image width='100%' height="222px" src={articleImage3} imagealt="house-image" />
-          <ImageHeading title="Popular Houses Under Three Million" link="Read Article" />
+          <ImageHeading title="Popular Houses Under Three Million" link="Read Article" color="white" />
         
         </div>
 

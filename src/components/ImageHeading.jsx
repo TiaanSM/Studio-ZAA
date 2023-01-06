@@ -1,14 +1,31 @@
-import styles from '../components/TextStyles.module.css';
 
 const ImageHeading = (props) => {
 
+  const isMobile = window.innerWidth < 768;
+
+  const containerStyle = {
+    position: 'relative',
+    width: '100%',
+    height: 'auto'
+  }
+
+  const titleStyles = {
+    fontWeight: '600',
+    padding: '12px 0 8px 0',
+    color: isMobile ? props.color : 'black'
+  }
+
+  const linkStyles = {
+    color: isMobile ? props.color : 'black'
+  }
+
   return (
 
-    <div className={styles.headingContainer}>
+    <div style={containerStyle}>
 
-        <h4 className={styles.headingTitle}>{props.title}</h4>
+        <h4 style={titleStyles}>{props.title}</h4>
         
-        <a href="/" className={styles.headingLink}>{props.link}</a>
+        <a href="/" style={linkStyles}>{props.link}</a>
 
     </div>
 

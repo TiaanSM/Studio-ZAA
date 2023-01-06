@@ -2,6 +2,8 @@ import { useInView } from 'react-intersection-observer';
 
 const Image = (props) => {
 
+    const isMobile = window.innerWidth < 768;
+
     const { ref, inView, entry } = useInView({
         /* Optional options */
         threshold: .40,
@@ -10,7 +12,7 @@ const Image = (props) => {
 
     const containerStyles = {
         width: props.width,
-        height: props.height,
+        height: isMobile ? '400px' : props.height,
         overflow: 'hidden',
     };
 
