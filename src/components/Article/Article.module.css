@@ -1,0 +1,37 @@
+.article {
+    width: auto;
+    height: 100vh;
+    position: relative;
+}
+
+.scrollContainer {
+    position: fixed;
+    width: 100vh;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100vh);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    transform-origin: top left;
+    transform: rotate(90deg) translateY(-100vh);
+}
+
+.section {
+    background-color: #333;
+    width: 200vw;
+    height: 100vh;
+}
+
+.textContainer {
+    width: 50%;
+    background-color: whitesmoke;
+}

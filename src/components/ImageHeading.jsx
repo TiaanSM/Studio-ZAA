@@ -12,7 +12,7 @@ const ImageHeading = (props) => {
   const titleStyles = {
     fontWeight: '600',
     padding: '12px 0 8px 0',
-    color: isMobile ? props.color : 'black'
+    color: isMobile ? props.color : 'black',
   }
 
   const linkStyles = {

@@ -2,7 +2,9 @@ import styles from './Article.module.css';
 
 const ArticleHero = () => {
 
-
+  const articleTitle = 'title'
+  const articleDesc = 'hgnd dfhjgdk dkgjd kdjgoe eiwms';
+  const articleAuthor = 'tim burt'
 
   return (
 
