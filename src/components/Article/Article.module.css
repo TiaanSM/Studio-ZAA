@@ -26,12 +26,56 @@
 }
 
 .section {
-    background-color: #333;
-    width: 200vw;
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .textContainer {
     width: 50%;
+    height: 100%;
     background-color: whitesmoke;
+}
+
+.articleTitle {
+    font-size: 5rem;
+    font-weight: 400;
+    padding-inline: 3rem;
+    padding-bottom: 7rem;
+    padding-top: 6rem;
+    line-height: 4.8rem;
+}
+
+.articleDesc {
+    padding-inline: 3rem;
+    width: 82%;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.articleAuthor {
+    padding-top: 2rem;
+    padding-inline: 3rem;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.imageContainer {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articleImage {
+    position: absolute;
+    right: 6rem;
+    width: 500px;
+    height: 85vh;
+    background-color: black;
+    object-fit: cover;
 }

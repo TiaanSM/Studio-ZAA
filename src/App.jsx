@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import useScrollPercentage from './components/useScrollPercentage';
 
 import { Routes, Route } from 'react-router-dom';
+import ArticleOne from './components/Article/ArticleOne';
 
 
 function App() {
@@ -21,10 +22,13 @@ function App() {
       <div className="scroll-container" ref={scrollRef} >
         <div className="content-container">
 
+      <ArticleOne />
+
+      {/*}
         <Routes>
           <Route path='/' element={ <Home/> } />
         </Routes>
-
+      */}
         </div>
       </div>
       

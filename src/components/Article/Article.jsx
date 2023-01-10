@@ -1,6 +1,6 @@
 import useScrollPercentage from '../useScrollPercentage';
 import styles from './Article.module.css';
-import ArticleHero from './ArticleHero';
+import ArticleOne from './ArticleOne';
 
 const Article = (props) => {
 
@@ -10,7 +10,7 @@ const Article = (props) => {
     <div className={styles.article}>
      <div className={styles.scrollContainer} ref={scrollRef}>
       <div className={styles.contentContainer}>
-        <ArticleHero />
+        <ArticleOne />
       </div>
      </div>
     </div>

@@ -29,7 +29,7 @@
 }
 
 .linkStyles {
-    text-decoration: black underline;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {

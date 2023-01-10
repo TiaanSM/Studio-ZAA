@@ -1,18 +1,19 @@
 import styles from './Article.module.css';
 
-const ArticleHero = () => {
-
-  const articleTitle = 'title'
-  const articleDesc = 'hgnd dfhjgdk dkgjd kdjgoe eiwms';
-  const articleAuthor = 'tim burt'
+const ArticleHero = (props) => {
 
   return (
 
     <section className={styles.section}>
         <div className={styles.textContainer}>
-            <h2 className={styles.articleTitle}>{articleTitle}</h2>
-            <p className={styles.articleDesc}>{articleDesc}</p>
-            <p className={styles.articleAuthor}>Written bt<br/>{articleAuthor}</p>
+            <h2 className={styles.articleTitle}>{props.title}</h2>
+            <p className={styles.articleDesc}>
+              {props.paragraphOne}
+              <br/> 
+              <br/>
+              {props.paragraphTwo}
+            </p>
+            <p className={styles.articleAuthor}><b>Written by</b><br/>{props.author}</p>
         </div>
         <div className={styles.imageContainer}>
             <img src="" alt="" className={styles.articleImage} />
