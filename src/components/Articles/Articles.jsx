@@ -17,7 +17,7 @@ const Articles = () => {
     <div className={styles.articles}>
 
       <div className={styles.container}>
-      <Link to="/article/Multi-Level-Housing-Benefits" className={styles.linkStyles}>
+      <Link to="Article/ArticleOne" className={styles.linkStyles}>
 
         <Image width='100%' height="530px" src={articleImage2} imagealt="house-image" />
         <ImageHeading title="Multi Level Housing Benefits" link="Read Article" color="white" />

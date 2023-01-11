@@ -16,7 +16,8 @@ const ImageHeading = (props) => {
   }
 
   const linkStyles = {
-    color: isMobile ? props.color : 'black'
+    color: isMobile ? props.color : 'black',
+    textDecoration: 'black underline',
   }
 
   return (
@@ -25,7 +26,7 @@ const ImageHeading = (props) => {
 
         <h4 style={titleStyles}>{props.title}</h4>
         
-        <a href="/" style={linkStyles}>{props.link}</a>
+        <p style={linkStyles}>{props.link}</p>
 
     </div>
 

@@ -1,26 +1,22 @@
 import styles from './Project.module.css';
 
-const ProjectSidebar = () => {
-
-    let projectTitle = 'The Grmophone works';
-    let projectDesc = 'anfsn sifoins snfisefnie eifosf eifslslng dknfds osfiwef ejfoijg skfspkfpeo efojej goej pg od sjejir spjgsp pwpdj do gdjvmbr9 r9 sjglsj vidjg;sjgi rijsrgls sijgsldijg djid dijdsl lslsls';
-    let nextProjectTitle = 'Republic';
+const ProjectSidebar = (props) => {
 
   return (
 
     <aside className={styles.aside}>
         <div className={styles.headingContainer}>
-            <h2 className={styles.projectTitle}>{projectTitle}</h2>
-            <p className={styles.projectDesc}>{projectDesc}</p>
+            <h2 className={styles.projectTitle}>{props.projectTitle}</h2>
+            <p className={styles.projectDesc}>{props.projectDesc}</p>
         </div>
         <span className={styles.footerContainer}>
-            <h4 className={styles.location}>Location<br/>{projectLocation}</h4>
-            <h4 className={styles.completion}>Completion<br/>{projectCompletion}</h4>
+            <h4 className={styles.location}>Location<br/>{props.projectLocation}</h4>
+            <h4 className={styles.completion}>Completion<br/>{props.projectCompletion}</h4>
         </span>
         <div>
             <a href="/">
                 <p>Next Project</p>
-                <h5>{nextProjectTitle}</h5>
+                <h5>{props.nextProjectTitle}</h5>
             </a>
         </div>
     </aside>
