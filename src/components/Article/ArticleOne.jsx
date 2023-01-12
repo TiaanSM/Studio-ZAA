@@ -1,8 +1,6 @@
 import ArticleHero from './ArticleHero';
 import NextArticle from './NextArticle';
 
-import { Routes, Route } from 'react-router-dom';
-
 const ArticleOne = () => {
 
     const paragraphContainerStyle = {

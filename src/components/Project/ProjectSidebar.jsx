@@ -6,14 +6,14 @@ const ProjectSidebar = (props) => {
 
     <aside className={styles.aside}>
         <div className={styles.headingContainer}>
-            <h2 className={styles.projectTitle}>{props.projectTitle}</h2>
-            <p className={styles.projectDesc}>{props.projectDesc}</p>
+            <h2 className={styles.projectTitle}>{props.title}</h2>
+            <p className={styles.projectDesc}>{props.desc}</p>
         </div>
-        <span className={styles.footerContainer}>
-            <h4 className={styles.location}>Location<br/>{props.projectLocation}</h4>
-            <h4 className={styles.completion}>Completion<br/>{props.projectCompletion}</h4>
-        </span>
-        <div>
+        <div className={styles.footerContainer}>
+            <h4 className={styles.location}><i>Location<br/>{props.location}</i></h4>
+            <h4 className={styles.completion}><i>Completion<br/>{props.completion}</i></h4>
+        </div>
+        <div className={styles.nextProjectContainer}>
             <a href="/">
                 <p>Next Project</p>
                 <h5>{props.nextProjectTitle}</h5>

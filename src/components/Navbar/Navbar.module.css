@@ -8,7 +8,6 @@
     position: fixed;
     left: calc(100vw - 3rem);
     z-index: 20;
-    position: relative;
 }
 
 .container {
@@ -74,6 +73,8 @@
     transition: all 0.3s ease;
     animation: openNav 0.5s ease-in forwards;
     cursor: pointer;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 .contactLink:hover {
     background-color: orangered;
