@@ -4,20 +4,12 @@
     overflow-y: scroll;
 }
 
-.dummy1 {
-    width: calc(100vw - 300px - 3rem);
-    height: 100vh;
-    background-color: #333;
-}
-.dummy2 {
-    width: calc(100vw - 300px - 3rem);
-    height: 100vh;
-    background-color: #555;
-}
-.dummy3 {
-    width: calc(100vw - 300px - 3rem);
-    height: 100vh;
-    background-color: #999;
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 2rem;
+    left: 2rem;
 }
 
 /*/ Project Sidebar /*/
@@ -65,3 +57,21 @@
     padding-inline: 2.5rem;
     font-weight: 300;
 }
+
+/*/ Project Images /*/
+
+.imageContainer {
+    width: calc(100vw - 3rem - 300px);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+}
+
+.image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+} 

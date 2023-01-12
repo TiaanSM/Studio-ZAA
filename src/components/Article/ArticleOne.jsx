@@ -1,7 +1,12 @@
 import ArticleHero from './ArticleHero';
 import NextArticle from './NextArticle';
+import Navbar from '../Navbar/Navbar';
+import useScrollPercentage from '../useScrollPercentage';
+import '../../App.css';
 
 const ArticleOne = () => {
+
+    const [scrollRef, scrollPercentage] = useScrollPercentage();
 
     const paragraphContainerStyle = {
         width: '600px',
@@ -31,6 +36,9 @@ const ArticleOne = () => {
   return (
     
       <>
+      <Navbar scrollProgress={scrollPercentage}/>
+      <div className="scroll-container" ref={scrollRef} >
+        <div className="content-container">
         <ArticleHero 
         title="Architecture and change" 
         paragraphOne='The architecture of Richard Hywel Evans and his studio closely parallels key developments in 
@@ -114,6 +122,8 @@ const ArticleOne = () => {
             </p>
         </div>
         <NextArticle nextArticle="Modern Design And Architecture" />
+        </div>
+      </div>
     </>
   )
 }

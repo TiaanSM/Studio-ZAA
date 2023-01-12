@@ -17,7 +17,7 @@ const ImageHeading = (props) => {
 
   const linkStyles = {
     color: isMobile ? props.color : 'black',
-    textDecoration: 'black underline',
+    textDecoration: isMobile ? props.color : 'black underline',
   }
 
   return (

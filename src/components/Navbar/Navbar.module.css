@@ -285,6 +285,7 @@
         transition: none;
         animation: none;
         cursor: pointer;
+        border: none;
     }
 
     .journalLink {

@@ -2,8 +2,10 @@ import Navbar from '../Navbar/Navbar';
 import ProjectSidebar from './ProjectSidebar'
 
 import styles from './Project.module.css';
+import logo from '../../assets/img/Logo.png'
 
 import useScrollPercentage from '../useScrollPercentage';
+import ProjectImages from './ProjectImages';
 
 const Project = () => {
 
@@ -11,7 +13,7 @@ const Project = () => {
 
   return (
     <section className={styles.section} ref={scrollRef}>
-
+      <a href="/"><img src={logo} alt="logo" className={styles.logo} /></a>
       <Navbar scrollProgress={scrollPercentage} />
       <ProjectSidebar 
         title="Malbury Ocean View" 
@@ -19,15 +21,8 @@ const Project = () => {
         location="Cape Town"
         completion="2019"
       />
-      <div className={styles.dummy1} >
-        
-      </div>
-      <div className={styles.dummy2}>
-        
-      </div>
-      <div className={styles.dummy3}>
-        
-      </div>
+      <ProjectImages />
+      <ProjectImages />
     </section>
   )
 }

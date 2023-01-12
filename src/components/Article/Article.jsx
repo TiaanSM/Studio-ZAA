@@ -11,7 +11,7 @@ const Article = (props) => {
   return (
     <div className={styles.article}>
     <Routes>
-      <Route path="Article/ArticleOne" element={<ArticleOne />} />
+      
     </Routes>
     </div>
   )

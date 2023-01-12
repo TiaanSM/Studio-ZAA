@@ -6,6 +6,8 @@ import image3 from '../../assets/img/projectImage6.webp';
 import Image from '../Image.jsx';
 import ImageHeading from '../ImageHeading.jsx';
 
+import { Link } from 'react-router-dom';
+
 const Projects = () => {
 
 
@@ -14,24 +16,24 @@ const Projects = () => {
     <main className={styles.main}>
 
         <div className={styles.container}>
-
+        <Link className={styles.linkStyle} to="Project/ProjectOne">
           <Image width='100%' height="530px" src={image1} imagealt="house-image" />
           <ImageHeading title="Malbury Ocean View" link="View Project" color="black" />
-
+        </Link>
         </div>
         
         <div className={styles.container}>
-
+        <Link className={styles.linkStyle}>
           <Image width='100%' height="530px" src={image2} imagealt="house-image" />
           <ImageHeading title="Grover Complex" link="View Project" color="black" />
-
+        </Link>
         </div>
 
         <div className={styles.container}>
-
+        <Link className={styles.linkStyle}>
           <Image width='100%' height="530px" src={image3} imagealt="house-image" />
           <ImageHeading title="Wineland Golf Field" link="View Project" color="black" />      
-        
+        </Link>
         </div>
 
     </main>
