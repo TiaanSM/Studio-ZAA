@@ -1,13 +1,14 @@
-import Navbar from '../Navbar/Navbar';
-import ProjectSidebar from './ProjectSidebar'
+import Navbar from '../components/Navbar/Navbar';
+import ProjectSidebar from '../components/Project/ProjectSidebar';
+import ProjectImages from '../components/Project/ProjectImages';
 
-import styles from './Project.module.css';
-import logo from '../../assets/img/Logo.png'
+import styles from '../components/Project/Project.module.css';
+import logo from '../assets/img/Logo.png';
 
-import useScrollPercentage from '../useScrollPercentage';
-import ProjectImages from './ProjectImages';
+import useScrollPercentage from '../components/useScrollPercentage';
 
-const Project = () => {
+
+const ProjectTwo = () => {
 
   const [scrollRef, scrollPercentage] = useScrollPercentage();
 
@@ -16,10 +17,10 @@ const Project = () => {
       <a href="/"><img src={logo} alt="logo" className={styles.logo} /></a>
       <Navbar scrollProgress={scrollPercentage} />
       <ProjectSidebar 
-        title="Malbury Ocean View" 
+        title="Grover Complex" 
         desc="Zil Pasyon's architecture is designed and built to settle discretely among the Islands unique granite boulders. The phrase, '“We will have succeeded if nothing can be seen from outside the Island” was a starting point for this project which began with a Concept Design in 2005, reaching final completion in 2017. The Six Senses resort in the Seychelles Islands on the private island of Félicité comprises 15 Resort Villas with their own infinity pool and ocean view, 3 Oceanside Bars, its own helicopter pad as well as a small number of luxury hillside Private Residences, each with their own acrylic base pool." 
         location="Cape Town"
-        completion="2019"
+        completion="2020"
       />
       <ProjectImages />
       <ProjectImages />
@@ -27,4 +28,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default ProjectTwo

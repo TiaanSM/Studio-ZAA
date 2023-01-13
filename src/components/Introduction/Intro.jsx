@@ -3,7 +3,7 @@ import introImage from '../../assets/img/introImage.webp';
 
 const Intro = () => {
 
-  // 
+  // intro image zoom out animation when inview.
 
   return (
     <section className={styles.intro}>

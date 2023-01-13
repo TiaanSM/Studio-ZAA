@@ -6,10 +6,8 @@ import Image from '../Image';
 
 const Header = () => {
 
-  // image
-  // logo
-  // top right desc
-  // bottom title
+  // on website open = 3 box loading reveal, image zoom out, main text fade up.
+
 
   return (
    <header className={styles.header}>
@@ -22,8 +20,3 @@ const Header = () => {
 }
 
 export default Header
-
-
-/*
-
-*/

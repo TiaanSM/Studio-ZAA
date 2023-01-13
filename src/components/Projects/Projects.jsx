@@ -16,21 +16,21 @@ const Projects = () => {
     <main className={styles.main}>
 
         <div className={styles.container}>
-        <Link className={styles.linkStyle} to="Project/ProjectOne">
+        <Link className={styles.linkStyle} to="Project/Malbury-Ocean-View">
           <Image width='100%' height="530px" src={image1} imagealt="house-image" />
           <ImageHeading title="Malbury Ocean View" link="View Project" color="black" />
         </Link>
         </div>
         
         <div className={styles.container}>
-        <Link className={styles.linkStyle}>
+        <Link className={styles.linkStyle} to="Project/Grover-Complex">
           <Image width='100%' height="530px" src={image2} imagealt="house-image" />
           <ImageHeading title="Grover Complex" link="View Project" color="black" />
         </Link>
         </div>
 
         <div className={styles.container}>
-        <Link className={styles.linkStyle}>
+        <Link className={styles.linkStyle} to="Project/Wineland-Golf-Field">
           <Image width='100%' height="530px" src={image3} imagealt="house-image" />
           <ImageHeading title="Wineland Golf Field" link="View Project" color="black" />      
         </Link>

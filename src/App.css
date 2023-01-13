@@ -41,6 +41,48 @@ body {
     transform: rotate(90deg) translateY(-100vh);
 }
 
+.animated-box1 {
+    width: calc(100vw - 66%);
+    height: 100vh;
+    background-color: orangered;
+    animation: slideUp 1s ease-out forwards;
+    animation-delay: 0.4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.animated-box2 {
+    width: 33%;
+    height: 100vh;
+    background-color: orangered;
+    animation: slideUp 1s ease-out forwards;
+    animation-delay: 0.7s;
+    position: absolute;
+    top: 0;
+    left: 33%;
+    z-index: 100;
+}
+.animated-box3 {
+    width: 33%;
+    height: 100vh;
+    background-color: orangered;
+    animation: slideUp 1s ease-out forwards;
+    animation-delay: 1s;
+    position: absolute;
+    top: 0;
+    left: 66%;
+    z-index: 100;
+}
+
+@keyframes slideUp {
+    from {
+        top: 0px;
+    } 
+    to {
+        top: -100vh;
+    }
+}
 
 @media screen and (max-width: 768px) {
 

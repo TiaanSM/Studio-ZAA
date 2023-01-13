@@ -17,7 +17,7 @@ const Articles = () => {
     <div className={styles.articles}>
 
       <div className={styles.container}>
-      <Link to="Article/ArticleOne" className={styles.linkStyles}>
+      <Link to="Article/Architecture-and-change" className={styles.linkStyles}>
 
         <Image width='100%' height="530px" src={articleImage2} imagealt="house-image" />
         <ImageHeading title="Multi Level Housing Benefits" link="Read Article" color="white" />
@@ -27,7 +27,7 @@ const Articles = () => {
 
       <div className={styles.container}>
         <div className={styles.articleContainer}>
-        <Link to="/article/Modern-Design-And-Architecture" className={styles.linkStyles}>
+        <Link to="Article/Modern-Design-And-Architecture" className={styles.linkStyles}>
 
           <Image width='100%' height="222px" src={articleImage} imagealt="house-image" />
           <ImageHeading title="Modern Design And Architecture" link="Read Article" color="white" />
@@ -36,10 +36,10 @@ const Articles = () => {
         </div>
 
         <div className={styles.articleContainer}>
-        <Link to="/article/Popular-Houses-Under-Three-Million" className={styles.linkStyles}>
+        <Link to="Article/Eco-Friendly-Designing" className={styles.linkStyles}>
 
           <Image width='100%' height="222px" src={articleImage3} imagealt="house-image" />
-          <ImageHeading title="Popular Houses Under Three Million" link="Read Article" color="white" />
+          <ImageHeading title="Eco Friendly Designing" link="Read Article" color="white" />
           
         </Link>
         </div>

@@ -1,10 +1,10 @@
-import ArticleHero from './ArticleHero';
-import NextArticle from './NextArticle';
-import Navbar from '../Navbar/Navbar';
-import useScrollPercentage from '../useScrollPercentage';
-import '../../App.css';
+import ArticleHero from '../components/Article/ArticleHero';
+import NextArticle from '../components/Article/NextArticle';
+import Navbar from '../components/Navbar/Navbar';
+import useScrollPercentage from '../components/useScrollPercentage';
+import '../App.css';
 
-const ArticleOne = () => {
+const ArticleTwo = () => {
 
     const [scrollRef, scrollPercentage] = useScrollPercentage();
 
@@ -40,7 +40,7 @@ const ArticleOne = () => {
       <div className="scroll-container" ref={scrollRef} >
         <div className="content-container">
         <ArticleHero 
-        title="Architecture and change" 
+        title="Modern Design And Architecture" 
         paragraphOne='The architecture of Richard Hywel Evans and his studio closely parallels key developments in 
         design, technology and urbanism over the past twenty-one years. 1997 feels almost antediluvian by
         modern standards, an era without social media, let alone the visual cornucopia of the online 
@@ -121,11 +121,11 @@ const ArticleOne = () => {
             Cellular Operations was a theatrical approach to a moribund genre, bringing learning from his years spent designing for clients in sun-kissed holiday spots and far-flung destinations. In its form, materials and functionality, the building set new standards and was part of a general revival of interest in workplace design.<br/><br/>
             </p>
         </div>
-        <NextArticle nextArticle="Modern Design And Architecture" />
+        <NextArticle nextArticle="Eco Friendly Designing" />
         </div>
       </div>
     </>
   )
 }
 
-export default ArticleOne
+export default ArticleTwo
