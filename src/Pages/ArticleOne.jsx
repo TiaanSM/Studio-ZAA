@@ -36,9 +36,6 @@ const ArticleOne = () => {
   return (
     
       <>
-      <div className="animated-box1"></div>
-      <div className="animated-box2"></div>
-      <div className="animated-box3"></div>
       <Navbar scrollProgress={scrollPercentage}/>
       <div className="scroll-container" ref={scrollRef} >
         <div className="content-container">

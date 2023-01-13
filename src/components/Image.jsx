@@ -20,7 +20,7 @@ const Image = (props) => {
         width: '100%',
         height: '100%',
         objectFit: 'cover',
-        transform: `${inView ? 'scale(1)' : 'scale(2)'}`,
+        transform: `${inView ? 'scale(1)' : 'scale(1.5)'}`,
         transition: 'all 1s ease'
     }
 

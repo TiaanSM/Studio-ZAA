@@ -77,7 +77,7 @@
     border-bottom: 1px solid lightgray;
 }
 .contactLink:hover {
-    background-color: orangered;
+    background-color: #F06446;
     color: white;
 }
 
@@ -95,7 +95,7 @@
     cursor: pointer;
 }
 .journalLink:hover {
-    background-color: orangered;
+    background-color: #F06446;
     color: white;
 }
 
@@ -113,7 +113,7 @@
     cursor: pointer;
 }
 .projectsLink:hover {
-    background-color: orangered;
+    background-color: #F06446;
     color: white;
 }
 
@@ -131,7 +131,7 @@
     cursor: pointer;
 }
 .aboutLink:hover {
-    background-color: orangered;
+    background-color: #F06446;
     color: white;
 }
 

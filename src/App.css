@@ -21,7 +21,7 @@ body {
 }
 
 .scroll-container {
-    position: fixed;
+    position: absolute;
     width: 100vh;
     height: 100vw;
     top: 0;
@@ -42,9 +42,9 @@ body {
 }
 
 .animated-box1 {
-    width: calc(100vw - 66%);
+    width: 33%;
     height: 100vh;
-    background-color: orangered;
+    background-color: #F06446;
     animation: slideUp 1s ease-out forwards;
     animation-delay: 0.4s;
     position: absolute;
@@ -53,9 +53,9 @@ body {
     z-index: 100;
 }
 .animated-box2 {
-    width: 33%;
+    width: 34%;
     height: 100vh;
-    background-color: orangered;
+    background-color: #F06446;
     animation: slideUp 1s ease-out forwards;
     animation-delay: 0.7s;
     position: absolute;
@@ -64,9 +64,9 @@ body {
     z-index: 100;
 }
 .animated-box3 {
-    width: 33%;
+    width: 35%;
     height: 100vh;
-    background-color: orangered;
+    background-color: #F06446;
     animation: slideUp 1s ease-out forwards;
     animation-delay: 1s;
     position: absolute;
@@ -75,9 +75,10 @@ body {
     z-index: 100;
 }
 
+
 @keyframes slideUp {
     from {
-        top: 0px;
+        top: 0;
     } 
     to {
         top: -100vh;

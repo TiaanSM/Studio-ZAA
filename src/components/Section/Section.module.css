@@ -82,6 +82,9 @@
 }
 
 .journalTitle {
+    opacity: 0;
+    width: auto;
+    height: 0rem;
     font-size: 5rem;
     font-size: clamp(5rem, 3.5999999999999996rem + 7.000000000000001vw, 12rem);
     font-weight: 400;
@@ -90,6 +93,28 @@
     bottom: 0;
     left: 3rem;
 }
+
+.animatedTitle {
+    width: auto;
+    height: 0rem;
+    font-size: 5rem;
+    font-size: clamp(5rem, 3.5999999999999996rem + 7.000000000000001vw, 12rem);
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 3rem;
+    animation: titleAnimation 1s ease forwards;
+}
+
+@keyframes titleAnimation {
+    from {
+        height: 0;
+    }
+    to {
+        height: 11rem;
+    }
+} 
 
 
 @media (max-width: 768px) {
