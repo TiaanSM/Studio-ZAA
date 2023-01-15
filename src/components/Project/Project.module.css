@@ -4,15 +4,6 @@
     overflow-y: scroll;
 }
 
-.logo {
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    top: 2rem;
-    left: 2rem;
-}
-
-
 
 /*/ Project Sidebar /*/
 
@@ -60,20 +51,37 @@
     font-weight: 300;
 }
 
-/*/ Project Images /*/
-
-.imageContainer {
-    width: calc(100vw - 3rem - 300px);
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #333;
+.nextProjectContainer {
+    display: none;
 }
 
-.image {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-} 
+
+@media (max-width: 768px) {
+
+    .section {
+        width: 100vw;
+        height: auto;
+    }
+
+    .aside {
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: 0;
+        border-left: none;
+    }
+
+    .headingContainer {
+        border-bottom: 1px solid rgb(161, 161, 161);
+    }
+
+    .projectDesc {
+        padding-bottom: 3rem;
+    }
+
+    .footerContainer {
+        padding-bottom: 3rem;
+    }
+
+    
+}
