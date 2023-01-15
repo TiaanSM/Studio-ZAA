@@ -2,13 +2,17 @@ import React from 'react'
 
 const nextArticle = (props) => {
 
+    const isMobile = window.innerWidth < 768;
+    // move to article css
+
     const sectionStyle = {
-        width: '1100px',
+        width: isMobile ? '100vw':'1100px',
         height: '100vh',
         backgroundColor: '#3d4442',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        flexDirection: isMobile ? 'column' : 'row'
     }
 
     const imageContainerStyle = {

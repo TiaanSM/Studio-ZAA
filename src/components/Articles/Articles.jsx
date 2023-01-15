@@ -4,48 +4,69 @@ import articleImage2 from '../../assets/img/articleImage2.webp';
 import articleImage3 from '../../assets/img/projectImage3.webp';
 
 import Image from '../Image.jsx';
-import ImageHeading from '../ImageHeading.jsx';
 
 import { Link } from 'react-router-dom';
 
 const Articles = () => {
 
-  // images fixed height causing problems, fix to a relative to screen width and height
-
-
   return (
-    <div className={styles.articles}>
+  <div className={styles.articles}>
 
-      <div className={styles.container}>
+    <div className={styles.container}>
       <Link to="Article/Architecture-and-change" className={styles.linkStyles}>
 
-        <Image width='100%' height="530px" src={articleImage2} imagealt="house-image" />
-        <ImageHeading title="Multi Level Housing Benefits" link="Read Article" color="white" />
+      <Image 
+        width='100%' 
+        height="530px" 
+        src={articleImage2} 
+        imagealt="house-image" 
+        
+        displayTexts="inline-block" 
+        title="Architecture and Change"
+        link="View Article" 
+        color="white"
+      />
 
       </Link>
-      </div>
+    </div>
 
-      <div className={styles.container}>
-        <div className={styles.articleContainer}>
+    <div className={styles.container}>
+      <div className={styles.articleContainer}>
         <Link to="Article/Modern-Design-And-Architecture" className={styles.linkStyles}>
 
-          <Image width='100%' height="222px" src={articleImage} imagealt="house-image" />
-          <ImageHeading title="Modern Design And Architecture" link="Read Article" color="white" />
+        <Image width='100%' 
+          height="222px" 
+          src={articleImage} 
+          imagealt="house-image" 
+
+          displayTexts="inline-block" 
+          title="Modern Design and Architecture"
+          link="View Article"
+          color="white"
+        />
 
         </Link>
-        </div>
+      </div>
 
-        <div className={styles.articleContainer}>
+      <div className={styles.articleContainer}>
         <Link to="Article/Eco-Friendly-Designing" className={styles.linkStyles}>
 
-          <Image width='100%' height="222px" src={articleImage3} imagealt="house-image" />
-          <ImageHeading title="Eco Friendly Designing" link="Read Article" color="white" />
+        <Image 
+          width='100%' 
+          height="222px" 
+          src={articleImage3} 
+          imagealt="house-image"
+          displayTexts="inline-block" 
+          title="Eco Friendly Designing"
+          link="View Article"
+          color="white"
+        />
           
         </Link>
-        </div>
-
       </div>
+
     </div>
+  </div>
   )
 }
 

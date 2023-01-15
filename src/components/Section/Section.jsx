@@ -21,12 +21,12 @@ const Section = () => {
           something bigger and brighter.
         </h3>
 
-        <p className={styles.descLink}>Focusing on <a href="" className={styles.a}>Commercial</a> & <a href="" className={styles.a}>Resort</a> Projects</p>
+        <p className={styles.descLink}>Focusing on <a href="" className={styles.a}>Commercial</a> & <a href="" className={styles.a}>Residential</a> Projects</p>
 
         <a href="" className={styles.projectLink}>View All Projects</a>
       </div>
 
-      <img src={sectionImage} alt="" className={styles.mainImage}/>
+      <img src={sectionImage} alt="House-Image" className={styles.mainImage}/>
 
       <div className={styles.journalContainer} ref={ref}>
 

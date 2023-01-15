@@ -58,3 +58,22 @@
     background-color: black;
     object-fit: cover;
 }
+
+@media (max-width: 768px) {
+
+    .section {
+        height: auto;
+        flex-direction: column;
+    }
+    .textContainer {
+        width: 100%;
+    }
+    .imageContainer {
+        width: calc(100vw - 4rem);
+        height: 600px;
+    }
+    .articleImage {
+        width: 100%;
+        right: 0;
+    }
+}
