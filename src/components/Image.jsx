@@ -46,7 +46,7 @@ const Image = (props) => {
   return (
     <>
     <div style={containerStyles} ref={ref}>
-        <img src={props.src} alt={props.imagealt} style={imageStyles} />
+        <img src={props.src} alt={props.imagealt} style={imageStyles} loading="lazy" />
     </div>
     <div style={textContainerStyle}>
 
