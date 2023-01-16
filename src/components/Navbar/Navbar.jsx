@@ -11,6 +11,11 @@ const Navbar = (props) => {
     const [openHamburger, setOpenHamburger] = useState(false);
     
     const isMobile = window.innerWidth < 768;
+    const logoLinkStyles = {
+      fontWeight: '500',
+      fontSize: '12px',
+      color : 'black'
+    };
 
   return (
     <nav className={styles.nav}>
@@ -18,7 +23,7 @@ const Navbar = (props) => {
             <a href="/" className={styles.established}>
               {isMobile 
               ? <img className={styles.logo} src={logo} alt="logo" /> 
-              :'Est. 2022'}
+              : <b style={logoLinkStyles}>Studio ZAA</b>}
             </a>
 
             <span className={styles.hamburgerIcon}>

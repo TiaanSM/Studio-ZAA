@@ -73,9 +73,9 @@
     .title {
         position: relative;
         top: 0;
-        left: 0;
+        left: 0rem;
         padding-top: 6rem;
-        padding-left: 3rem;
+        padding-inline: auto;
     }
 
     .introImage {

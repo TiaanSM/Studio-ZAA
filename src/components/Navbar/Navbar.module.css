@@ -64,7 +64,7 @@
 }
 
 .contactLink {
-    width: 1019px;
+    width: 74.5vw;
     height: 100vh;
     position: absolute;
     top: 0;
@@ -82,8 +82,8 @@
 }
 
 .journalLink {
-    width: 760px;
-    height: 500px;
+    width: 56vw;
+    height: 31.25rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -100,8 +100,8 @@
 }
 
 .projectsLink {
-    width: 510px;
-    height: 330px;
+    width: 37vw;
+    height: 20.625rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -118,8 +118,8 @@
 }
 
 .aboutLink {
-    width: 250px;
-    height: 165px;
+    width: 18.5vw;
+    height: 10.3125rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -147,8 +147,8 @@
     left: 0;
     bottom: 0;
     padding: 2rem;
-    font-size: 1.4rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 200;
 }
 
 
@@ -235,7 +235,7 @@
         transform: rotate(0);
         color: white;
         position: fixed;
-        left: 2rem;
+        left: 1.5rem;
         display: block;
         width: auto;
         top: 3rem;
@@ -245,7 +245,7 @@
     .hamburgerIcon {
         transform: rotate(0);
         position: fixed;
-        right: 2rem;
+        right: 1.5rem;
         z-index: 20;
     }
     
