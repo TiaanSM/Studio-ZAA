@@ -3,6 +3,7 @@ import { lazy , Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './Pages/Home';
+import Contact from './Pages/Contact';
 
 const ProjectOne = lazy(() => import('./Pages/ProjectOne'));
 const ProjectTwo = lazy(() => import('./Pages/ProjectTwo'));
@@ -21,6 +22,7 @@ function App() {
       <Routes>
       
         <Route path="/" element={ <Home/> } />
+        <Route path="/Contact" element={ <Contact /> } />
 
         <Route path="Project/Malbury-Ocean-View" element={ <ProjectOne /> } />
         <Route path="Project/Grover-Complex" element={ <ProjectTwo /> } />

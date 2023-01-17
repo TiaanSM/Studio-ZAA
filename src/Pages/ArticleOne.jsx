@@ -9,34 +9,6 @@ const ArticleOne = () => {
     const [scrollRef, scrollPercentage] = useScrollPercentage();
     const isMobile = window.innerWidth < 768;
 
-    const paragraphContainerStyle = {
-        width: isMobile ? '100%' : '600px',
-        height: isMobile ? 'auto' : '100vh',
-        backgroundColor: 'whitesmoke',
-        borderLeft: '1px solid rgb(90,90,90,0.50)'
-    };
-
-    const paragraphTextStyle = {
-      padding: isMobile ? '2rem' : '3rem',
-      fontSize: isMobile ? '1.1rem' : '1rem',
-      lineHeight: isMobile ? '1.5rem' : '1rem'
-    };
-
-    const smallImageStyle = {
-        display: isMobile ? 'none' : 'block',
-        width: '700px',
-        height: '100vh',
-        objectFit: 'cover',
-        backgroundColor: 'black'
-    };
-
-    const bigImageStyle = {
-      width: '100vw',
-      height: '100vh',
-      objectFit: 'cover',
-      backgroundColor: 'black'
-    };
-
   return (
     
       <>

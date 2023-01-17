@@ -1,6 +1,9 @@
 import styles from './Navbar.module.css';
+
 import { Divide as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import logo from '../../assets/img/Logo.png';
 
 const Navbar = (props) => {
@@ -44,9 +47,11 @@ const Navbar = (props) => {
         
         <div className={openHamburger ? styles.openMenu : styles.closeMenu}>
           <div className={styles.contactLink}>
+          <Link to="/Contact" className={styles.linkStyles}>
             <span className={styles.linkText}>
               <p>Contact</p>
             </span>
+            </Link>
           </div>
           <div className={styles.journalLink}>
           <span className={styles.linkText}>
@@ -59,9 +64,11 @@ const Navbar = (props) => {
             </span>
           </div>
           <div className={styles.aboutLink}>
+          
           <span className={styles.linkText}>
               <p>About</p>
             </span>
+            
           </div>
         </div>
         

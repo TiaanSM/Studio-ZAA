@@ -98,7 +98,7 @@
     width: auto;
     height: 0rem;
     font-size: 5rem;
-    font-size: clamp(5rem, 3.59rem + 10.00vw, 12rem);
+    font-size: clamp(5rem, 3.59rem + 8.00vw, 12rem);
     font-weight: 400;
     color: white;
     position: absolute;
@@ -112,7 +112,7 @@
         height: 0;
     }
     to {
-        height: 14rem;
+        height: 13rem;
     }
 } 
 
