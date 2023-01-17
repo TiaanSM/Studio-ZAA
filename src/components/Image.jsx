@@ -10,10 +10,15 @@ const Image = (props) => {
         triggerOnce: true
     });
 
+    const mainContainerStyles = {
+      padding: props.padding
+    } 
+
     const containerStyles = {
         width: isMobile ? 'calc(100vw - 2.6rem)' : props.width,
         height: isMobile ? '400px' : props.height,
         overflow: 'hidden',
+        
     };
 
     const imageStyles = {
@@ -46,7 +51,7 @@ const Image = (props) => {
 
 
   return (
-    <>
+    <div style={mainContainerStyles}>
     <div style={containerStyles} ref={ref}>
         <img src={props.src} alt={props.imagealt} style={imageStyles} loading="lazy" />
     </div>
@@ -57,7 +62,7 @@ const Image = (props) => {
     <p style={linkStyles}>{props.link}</p>
 
     </div>
-    </>
+    </div>
   )
 }
 

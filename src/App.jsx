@@ -4,6 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 
 import Home from './Pages/Home';
 import Contact from './Pages/Contact';
+import NavProjects from './Pages/NavProjects';
+import NavJournal from './Pages/NavJournal';
 
 const ProjectOne = lazy(() => import('./Pages/ProjectOne'));
 const ProjectTwo = lazy(() => import('./Pages/ProjectTwo'));
@@ -22,6 +24,8 @@ function App() {
       <Routes>
       
         <Route path="/" element={ <Home/> } />
+        <Route path="/Projects" element={ <NavProjects /> } />
+        <Route path="/Journal" element={ <NavJournal /> } />
         <Route path="/Contact" element={ <Contact /> } />
 
         <Route path="Project/Malbury-Ocean-View" element={ <ProjectOne /> } />

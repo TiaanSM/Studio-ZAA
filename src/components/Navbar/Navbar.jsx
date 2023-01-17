@@ -54,14 +54,18 @@ const Navbar = (props) => {
             </Link>
           </div>
           <div className={styles.journalLink}>
+          <Link to="/Journal" className={styles.linkStyles}>
           <span className={styles.linkText}>
               <p>Journal</p>
             </span>
+            </Link>
           </div>
           <div className={styles.projectsLink}>
+            <Link to="/Projects" className={styles.linkStyles}>
           <span className={styles.linkText}>
               <p>Projects</p>
             </span>
+            </Link>
           </div>
           <div className={styles.aboutLink}>
           
