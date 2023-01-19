@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar/Navbar";
 import useScrollPercentage from '../components/useScrollPercentage';
-import Image from "../components/Image";
 import styles from '../components/NavJournal.module.css';
 import ArticleImage from '../assets/img/articleImage2.webp';
 
@@ -17,79 +16,67 @@ const NavJournal = () => {
             </div>
             <div className={styles.mainImageContainer}>
 
+                <div className={styles.contentContainer}>
+                
                 <div className={styles.imageContainer}>
-                <Image 
-                    width='30vw' 
-                    height="400px"
-                    src={ArticleImage}  
-                    padding="0 0 2rem 0"
-                  
-                    displayTexts="inline-block" 
-                    title="Architecture and Change"
-                    link="Read More" 
-                    color="white"
-                   />
-                  <Image 
-                    width='30vw' 
-                    height="400px"
-                    src={ArticleImage} 
-                    padding="0 0 2rem 0" 
-                  
-                    displayTexts="inline-block" 
-                    title="Architecture and Change"
-                    link="Read More" 
-                    color="white"
-                   />
+
+                   <img src={ArticleImage} alt="" className={styles.sideImage} />
+                    <div className={styles.textContainer}>
+                        <h4 className={styles.articleTitle}>Architecture and change</h4>
+                        <p className={styles.link}>Read More</p>
+                    </div>
+                    </div>
+
+                    <div className={styles.imageContainer}>
+                   <img src={ArticleImage} alt="" className={styles.sideImage} />
+                   
+                    <div className={styles.textContainer}>
+                        <h4 className={styles.articleTitle}>Placeholder</h4>
+                        <p className={styles.link}>Read More</p>
+                    </div>
+                    </div>
+        
                 </div>
 
-                <div className={styles.imageContainer}>
-                <Image 
-                    width='30vw' 
-                    height="500px"
-                    src={ArticleImage}  
-                    padding="0 0 2rem 0"
-                  
-                    displayTexts="inline-block" 
-                    title="Architecture and Change"
-                    link="Read More" 
-                    color="white"
-                   />
-                   <Image 
-                    width='30vw' 
-                    height="500px"
-                    src={ArticleImage}
-                    padding="0 0 2rem 0"  
-                  
-                    displayTexts="inline-block" 
-                    title="Architecture and Change"
-                    link="Read More" 
-                    color="white"
-                   />
+                <div className={styles.contentContainer}>
+                
+                    <div className={styles.imageContainer}>
+
+                   <img src={ArticleImage} alt="" className={styles.centerImage} />
+                    <div className={styles.textContainer}>
+                        <h4 className={styles.articleTitle}>Modern Design And Architecture</h4>
+                        <p className={styles.link}>Read More</p>
+                    </div>
+                    </div>
+
+                    <div className={styles.imageContainer}>
+                   <img src={ArticleImage} alt="" className={styles.centerImage} />
+                    <div className={styles.textContainer}>
+                        <h4 className={styles.articleTitle}>Placeholder</h4>
+                        <p className={styles.link}>Read More</p>
+                    </div>
+                    </div>
+                   
                 </div>
 
-                <div className={styles.imageContainer}>
-                <Image 
-                    width='30vw' 
-                    height="400px"
-                    src={ArticleImage}
-                    padding="0 0 2rem 0"  
-                  
-                    displayTexts="inline-block" 
-                    title="Architecture and Change"
-                    link="Read More" 
-                    color="white"
-                   />
-                   <Image 
-                    width='30vw' 
-                    height="400px"
-                    src={ArticleImage} 
-                    padding="0 0 2rem 0" 
-                  
-                    displayTexts="inline-block" 
-                    title="Architecture and Change"
-                    link="Read More" 
-                    color="white"
-                   />
+                <div className={styles.contentContainer}>
+                
+                   <div className={styles.imageContainer}>
+                   <img src={ArticleImage} alt="" className={styles.sideImage} />
+                    <div className={styles.textContainer}>
+                        <h4 className={styles.articleTitle}>Eco Friendly Designing</h4>
+                        <p className={styles.link}>Read More</p>
+                    </div>
+                    </div>
+
+                    <div className={styles.imageContainer}>
+                   <img src={ArticleImage} alt="" className={styles.sideImage} />
+                    <div className={styles.textContainer}>
+                        <h4 className={styles.articleTitle}>Placeholder</h4>
+                        <p className={styles.link}>Read More</p>
+                    </div>
+                    </div>
+
                 </div>
 
             </div>
