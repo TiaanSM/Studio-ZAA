@@ -18,7 +18,7 @@ const NavJournal = () => {
 
                 <div className={styles.contentContainer}>
                 
-                <div className={styles.imageContainer}>
+                  <div className={styles.imageContainer}>
 
                    <img src={ArticleImage} alt="" className={styles.sideImage} />
                     <div className={styles.textContainer}>
@@ -79,6 +79,9 @@ const NavJournal = () => {
 
                 </div>
 
+            </div>
+            <div className={styles.toTopContainer}>
+                <p>Back to top</p>
             </div>
         </div>
     </section>
