@@ -1,8 +1,9 @@
 import Navbar from "../components/Navbar/Navbar";
 import Image from "../components/Image";
 import useScrollPercentage from "../components/useScrollPercentage"
-import styles from '../components/Contact.module.css';
+import styles from '../components/styles/Contact.module.css';
 import introImage from '../assets/img/introImage.webp';
+import PageChange from '../components/PageChange';
 
 const Contact = () => {
 
@@ -12,6 +13,7 @@ const Contact = () => {
   return (
     
     <>
+    <PageChange />
     <Navbar scrollProgress={scrollPercentage} />
     <section className={styles.section}>
       

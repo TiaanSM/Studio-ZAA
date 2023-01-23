@@ -43,10 +43,10 @@ body {
 
 .animated-box1 {
     width: 33%;
-    height: 100vh;
+    height: 105vh;
     background-color: #F06446;
     animation: slideUp 1s ease-out forwards;
-    animation-delay: 0.4s;
+    animation-delay: 1.4s;
     position: absolute;
     top: 0;
     left: 0;
@@ -54,10 +54,10 @@ body {
 }
 .animated-box2 {
     width: 34%;
-    height: 100vh;
+    height: 105vh;
     background-color: #F06446;
     animation: slideUp 1s ease-out forwards;
-    animation-delay: 0.7s;
+    animation-delay: 1.7s;
     position: absolute;
     top: 0;
     left: 33%;
@@ -65,10 +65,10 @@ body {
 }
 .animated-box3 {
     width: 35%;
-    height: 100vh;
+    height: 105vh;
     background-color: #F06446;
     animation: slideUp 1s ease-out forwards;
-    animation-delay: 1s;
+    animation-delay: 2s;
     position: absolute;
     top: 0;
     left: 66%;
@@ -81,7 +81,7 @@ body {
         top: 0;
     } 
     to {
-        top: -100vh;
+        top: -105vh;
     }
 }
 

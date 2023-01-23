@@ -1,7 +1,8 @@
 import Navbar from "../components/Navbar/Navbar";
 import useScrollPercentage from '../components/useScrollPercentage';
-import styles from '../components/NavJournal.module.css';
+import styles from '../components/styles/NavJournal.module.css';
 import ArticleImage from '../assets/img/articleImage2.webp';
+import PageChange from '../components/PageChange';
 
 const NavJournal = () => {
 
@@ -9,6 +10,7 @@ const NavJournal = () => {
 
   return (
     <section className={styles.section} ref={scrollRef}>
+        <PageChange />
         <Navbar scrollProgress={scrollPercentage} />
         <div className={styles.mainContainer}>
             <div className={styles.headingContainer}>

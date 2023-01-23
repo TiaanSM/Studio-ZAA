@@ -5,6 +5,7 @@ import ProjectImages from '../components/Project/ProjectImages';
 import styles from '../components/Project/Project.module.css';
 
 import useScrollPercentage from '../components/useScrollPercentage';
+import PageChange from '../components/PageChange';
 
 
 const ProjectThree = () => {
@@ -14,6 +15,7 @@ const ProjectThree = () => {
 
   return (
     <section className={styles.section} ref={scrollRef}>
+      <PageChange />
       <Navbar scrollProgress={scrollPercentage} />
       {isMobile ? <ProjectImages height="80vh"/> : null}
       <ProjectSidebar 

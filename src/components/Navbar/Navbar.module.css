@@ -154,6 +154,9 @@
 .linkStyles {
     color: black;
 }
+.linkStyles:hover {
+    color: white;
+}
 
 @keyframes openNav {
     0% {
@@ -328,6 +331,10 @@
         transition: none;
         animation: none;
         cursor: pointer;
+    }
+
+    .linkStyles {
+        color: whitesmoke;
     }
 
     .contactLink {

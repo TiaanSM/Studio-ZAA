@@ -26,6 +26,7 @@ import articleImage3 from '../assets/img/projectImage3.webp';
 // imports
 import Navbar from '../components/Navbar/Navbar';
 import Image from '../components/Image';
+import PageChange from '../components/PageChange';
 
 import useScrollPercentage from '../components/useScrollPercentage';
 import { useInView } from 'react-intersection-observer';
@@ -51,9 +52,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="animated-box1"></div>
-      <div className="animated-box2"></div>
-      <div className="animated-box3"></div>
+      <PageChange />
       <Navbar scrollProgress={scrollPercentage} />
       
       <div className="scroll-container" ref={scrollRef} >
@@ -78,7 +77,7 @@ const Home = () => {
         
         <div className={introStyles.topContainer}>
           <h3 className={introStyles.title}>Introduction</h3>
-          <img src={introImage} alt="" className={introStyles.introImage} />
+          <img src={introImage} alt="house-image" className={introStyles.introImage} />
         </div>
 
         <div className={introStyles.bottomContainer}>
@@ -87,7 +86,9 @@ const Home = () => {
             Being bold. Exploring the new. Where the surprising delights the 
             mind. Where people love to live, work and play. Let's start 
             building beyond.</p>
-          <a href="" className={introStyles.link}>Learn More About Us</a>
+          <Link to="/About">
+            <p className={introStyles.link}>Learn More About Us</p>
+          </Link>
         </div>
 
         </section>
@@ -164,9 +165,10 @@ const Home = () => {
               something bigger and brighter.
             </h3>
 
-            <p className={secStyles.descLink}>Focusing on <a href="" className={secStyles.a}>Commercial</a> & <a href="" className={styles.a}>Residential</a> Projects</p>
-
-            <a href="" className={secStyles.projectLink}>View All Projects</a>
+            <p className={secStyles.descLink}>Focusing on <a className={secStyles.a}>Commercial</a> & <a className={secStyles.a}>Residential</a> Projects</p>
+            <Link to="/Projects">
+            <p className={secStyles.projectLink}>View All Projects</p>
+            </Link>
           </div>
 
           <img src={sectionImage} alt="House-Image" className={secStyles.mainImage}/>
@@ -178,7 +180,9 @@ const Home = () => {
               inspires. Let's work towards 
               something bigger and brighter.
             </h3>
-            <a href="" className={secStyles.articleLink}>View All Articles</a>
+            <Link to="/Journal">
+              <p className={secStyles.articleLink}>View All Articles</p>
+            </Link>
             <h4 className={inView ? secStyles.animatedTitle : secStyles.journalTitle}>Journal</h4>
           </div>
         </div>

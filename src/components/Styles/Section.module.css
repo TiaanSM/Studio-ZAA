@@ -40,15 +40,12 @@
     text-align: center;
 }
 
-.a {
-    color: black;
-    text-align: center;
-}
-
 .projectLink {
     position: absolute;
-    bottom: 4rem;
     color: black;
+    bottom: 4rem;
+    left: calc(100% - 50% - (112px / 2) );
+    text-decoration: underline;
 }
 
 
@@ -76,9 +73,15 @@
     line-height: 1.9rem;
 }
 
+.a {
+    color: black;
+    text-decoration: underline;
+}
+
 .articleLink {
     color: white;
     padding-left: 3rem;
+    text-decoration: underline;
 }
 
 .journalTitle {

@@ -1,7 +1,9 @@
 import ArticleHero from '../components/Article/ArticleHero';
 import NextArticle from '../components/Article/NextArticle';
 import Navbar from '../components/Navbar/Navbar';
+
 import useScrollPercentage from '../components/useScrollPercentage';
+import PageChange from '../components/PageChange';
 import '../App.css';
 
 const ArticleOne = () => {
@@ -44,6 +46,7 @@ const ArticleOne = () => {
   return (
     
       <>
+      <PageChange />
       <Navbar scrollProgress={scrollPercentage}/>
       <div className="scroll-container" ref={scrollRef} >
         <div className="content-container">

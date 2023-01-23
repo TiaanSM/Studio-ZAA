@@ -7,6 +7,7 @@ import Contact from './Pages/Contact';
 import NavProjects from './Pages/NavProjects';
 import NavJournal from './Pages/NavJournal';
 import About from './Pages/About';
+import Loading from './components/Project/Loading';
 
 const ProjectOne = lazy(() => import('./Pages/ProjectOne'));
 const ProjectTwo = lazy(() => import('./Pages/ProjectTwo'));
@@ -19,7 +20,6 @@ const ArticleThree = lazy(() => import('./Pages/ArticleThree'));
 function App() {
   
   // move all styles into one folder.
-  // lazy import loading /> orange div.
   // document.onLoad triggers opening animation.
   // add all images, optomized.
   // all links work.
@@ -27,11 +27,10 @@ function App() {
   // all loading page switch animations working.
   // clean up code, best practices.
 
-  // projectsNav component /> image? TextColor = inView ? black : gray; 
 
   return (
     <div className="App"  >
-    <Suspense fallback={<h1>Loading...</h1>}>
+    <Suspense fallback={ <Loading /> }>
       <Routes>
       
         <Route path="/" element={ <Home/> } />
