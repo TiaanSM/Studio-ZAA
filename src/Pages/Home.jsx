@@ -37,6 +37,8 @@ import '../App.css';
 const Home = () => {
 
   // intro image zoom out animation when inview.
+  // import all images in one line.
+  // semantic elements.
 
   const [scrollRef, scrollPercentage] = useScrollPercentage();
 

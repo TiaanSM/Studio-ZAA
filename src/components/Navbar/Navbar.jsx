@@ -8,9 +8,9 @@ import logo from '../../assets/img/Logo.png';
 
 const Navbar = (props) => {
     
-    // hamburger icon
-    // onClick navbar stays
-    // onClick open nav fades in
+  // move linktext span styles to the link container.
+  // black logo when applicable.
+    
     const [openHamburger, setOpenHamburger] = useState(false);
     
     const isMobile = window.innerWidth < 768;
@@ -68,11 +68,11 @@ const Navbar = (props) => {
             </Link>
           </div>
           <div className={styles.aboutLink}>
-          
+          <Link to="/About" className={styles.linkStyles}>
           <span className={styles.linkText}>
               <p>About</p>
             </span>
-            
+            </Link>
           </div>
         </div>
         

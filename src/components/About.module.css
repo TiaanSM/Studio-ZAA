@@ -1,0 +1,207 @@
+.about {
+    width: auto;
+    height: 100vh;
+}
+
+
+
+.headingContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.headingImage {
+    width: 48.5vw;
+    height: 100vh;
+    background-color: black;
+}
+.headTextContainer {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    border-right: 1px solid lightgray;
+}
+.headTitle {
+    width: 25rem;
+    font-size: 3rem;
+    line-height: 2.9rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 2.5rem;
+    margin-left: 2.5rem;
+}
+
+
+
+.aboutUsContainer {
+    width: 150vw;
+    height: 100vh;
+    background-color: black;
+}
+.aboutTextContainer {
+    width: 55vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+}
+.aboutIntro {
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+.aboutDesc {
+    font-size: 13px;
+    font-family: sans-serif;
+    width: 60%;
+    line-height: 1.1rem;
+    padding-left: 1.5rem;
+}
+.aboutTitle {
+    font-size: 8rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 1rem;
+    padding-inline: 1.5rem;
+}
+
+
+
+.processContainer {
+    width: 43vw;
+    height: 100vh;
+    position: relative;
+    background-color: #3d4442;
+}
+.processIntro {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-left: 2.5rem;
+    padding-top: 2rem;
+    color: white;
+}
+.processTextContainer {
+    width: 43vw;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+}
+.processTitle {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-inline: 2.5rem;
+    padding-bottom: 1.5rem;
+    color: white;
+}
+.processDesc {
+    width: 80%;
+    height: auto;
+    font-size: 13px;
+    font-family: sans-serif;
+    line-height: 1.1rem;
+    padding-inline: 2.5rem;
+    color: white;
+}
+.processImage {
+    width: 45vw;
+    height: 100vh;
+    background-color: black;
+}
+
+
+
+.leadershipContainer {
+    width: 700px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.leadTitle {
+    position: absolute;
+    top: 2rem;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.leadDesc {
+    width: 100%;
+    padding-inline: 7.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.9rem;
+}
+
+.leadLink {
+    color: black;
+    text-align: center;
+    position: absolute;
+    bottom: 3rem;
+}
+
+
+
+.personelContainer {
+    width: 150vw;
+    height: 100vh;
+    display: flex;
+}
+
+
+
+.awardsContainer {
+    width: 800px;
+    height: 100vh;
+    background-color: green;
+}
+
+
+
+.finalImage {
+    width: 800px;
+    height: 100vh;
+}
+
+
+
+.missionContainer {
+    width: 680px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #F06446;
+}
+.missionTitle {
+    position: absolute;
+    top: 2rem;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+.missionDesc {
+    width: 100%;
+    padding-inline: 7rem;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.9rem;
+    color: white;
+}
+.missionLink {
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 3rem;
+}
