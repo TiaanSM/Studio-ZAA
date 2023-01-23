@@ -8,6 +8,8 @@ import '../App.css';
 const About = () => {
 
     const [scrollRef, scrollPercentage] = useScrollPercentage();
+    const isMobile = window.innerWidth < 768;
+
 
   return (
 
@@ -26,10 +28,10 @@ const About = () => {
         <div className={styles.aboutUsContainer}>
             <div className={styles.aboutTextContainer}>
                 <h6 className={styles.aboutIntro}>About Us</h6>
-                <p className={styles.aboutDesc}>pasbfdu sufs fsusiie siuhfs ekspfs fjsi fdufbei Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, pariatur repellat enim et quo tempora unde!<br/><br/> Aliquid nisi quaerat incidunt facere numquam expedita architecto! Magni nam expedita optio cum, aliquid reiciendis eum non voluptates sint necessitatibus corporis esse, nesciunt at minus doloremque. Eius dignissimos explicabo nemo reiciendis ducimus suscipit asperiores!</p>
+                <p className={styles.aboutDesc}>Studio RHE is a London based architecture and design practice with a global reputation for sustainable, bold and innovative residential, leisure and workplace environments. We are at the forefront of thinking on new trends in design, technology and architecture.<br/><br/>Our highly skilled team is renowned for the fast generation of concept ideas and hands-on project delivery. In tune with global fast changing markets, Studio RHE combines commercial know-how with creative originality.</p>
                 <h6 className={styles.aboutTitle}>South Africa</h6>
             </div>
-            <img src="" alt="" />
+            <img src="" alt="" className={styles.aboutImage} />
         </div>
 
         <div className={styles.processContainer}>
@@ -48,11 +50,12 @@ const About = () => {
         </div>
 
         <div className={styles.personelContainer}>
-        <Image 
-              width='100%' 
+            <Image 
+              width='490px' 
               height="530px" 
               src={image} 
-              imagealt="house-image"    
+              imagealt="house-image" 
+              padding={isMobile ? '2rem' : '0'}   
              
               title="Wineland Golf Field"
               link="View Project"
@@ -60,7 +63,7 @@ const About = () => {
               displayTexts="inline-block"
             />   
             <Image 
-              width='100%' 
+              width='490px' 
               height="530px" 
               src={image} 
               imagealt="house-image"    
@@ -69,9 +72,10 @@ const About = () => {
               link="View Project"
               color="black"
               displayTexts="inline-block"
+              padding={isMobile ? '2rem' : '0'}   
             />   
             <Image 
-              width='100%' 
+              width='490px' 
               height="530px" 
               src={image} 
               imagealt="house-image"    
@@ -80,9 +84,10 @@ const About = () => {
               link="View Project"
               color="black"
               displayTexts="inline-block"
+              padding={isMobile ? '2rem' : '0'}   
             />   
             <Image 
-              width='100%' 
+              width='490px' 
               height="530px" 
               src={image} 
               imagealt="house-image"    
@@ -91,36 +96,25 @@ const About = () => {
               link="View Project"
               color="black"
               displayTexts="inline-block"
+              padding={isMobile ? '2rem' : '0'}   
             />   
         </div>
 
         <div className={styles.awardsContainer}>
-            <span>
-                <h6>Over 13 International Awards Including:</h6>
-            </span>
-            <div>
-              <ul>
-                <li>NLA Awards 2034</li>
-                <li>Frame Awards</li>
-                <li>Ahead MEA 2030</li>
-                <li>World Travel Awards 2055</li>
-                <li>FX Design Awards 2025</li>
-                <li>Archilovers 2038</li>
-                <li>Offsite Awards 2042</li>
-              </ul>
-              <ul>
-                <li>02</li>
-                <li>02</li>
-                <li>02</li>
-                <li>01</li>
-                <li>01</li>
-                <li>04</li>
-                <li>03</li>
+
+            <div className={styles.awardTextContainer}>
+            <h6 className={styles.awardsIntro}>Over 13 International Awards Including:</h6>
+              <ul className={styles.awardNamesContainer}>
+                <li className={styles.awardName}>NLE Awards 2034<span className={styles.awardAmount}>02</span></li>
+                <li className={styles.awardName}>Frame Awards<span className={styles.awardAmount}>02</span></li>
+                <li className={styles.awardName}>Ahead MEA 2030<span className={styles.awardAmount}>02</span></li>
+                <li className={styles.awardName}>World Travel Awards 2055<span className={styles.awardAmount}>01</span></li>
+                <li className={styles.awardName}>FX Design Awards 2025<span className={styles.awardAmount}>03</span></li>
+                <li className={styles.awardName}>Archilovers 2038<span className={styles.awardAmount}>04</span></li>
+                <li className={styles.awardName}>Offsite Awards 2042<span className={styles.awardAmount}>03</span></li>
               </ul>
             </div>
-            <span>
-                <h6>Awards</h6>
-            </span>
+                <h6 className={styles.awardsTitle}>Awards</h6>
         </div>
 
         <img src="" alt="" className={styles.finalImage} />
