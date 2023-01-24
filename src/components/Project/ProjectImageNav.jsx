@@ -1,4 +1,6 @@
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
+import styles from '../Styles/NavProjects.module.css';
 
 const ProjectImageNav = (props) => {
 
@@ -6,41 +8,42 @@ const ProjectImageNav = (props) => {
       width: '100vw',
       height: '100vh',
       display: 'flex',
-      justifyContent: 'center',
+      justifyContent: 'flex-start',
       alignItems: 'center',
-    }
-
-    const imageContainerStyles = {
-        width: '100vw',
-        height: '100vh',
-        objectFit: 'cover'
-    }
-
-    const titleContainerStyles = {
-      width: '50vw',
-      height: '50vh'
-    }
-
-    const titleStyles = {
-      fontSize: '2rem',
-      color: inView ? 'black' : 'gray',
-      position: 'absolute',
+      position: 'relative',
     }
 
     const { ref, inView } = useInView({
       /* Optional options */
-      threshold: .40,
+      threshold: .65,
       triggerOnce: false
-  });
+    });
+
+    const titleStyles = {
+      width: '50%',
+      fontSize: '3rem',
+      fontWeight: '300',
+      color: inView ? 'black' : 'lightgray',
+      position: 'fixed',
+      top: props.positionTop,
+      left: '50vw',
+      transition: 'all 0.5s ease',
+      paddingLeft: '3rem'
+    }
 
   return (
     <div style={containerStyles}>
-      <div ref={ref} style={imageContainerStyles}>
+      
+      <Link to={props.linkSrc}>
+      <div ref={ref} className={styles.imageContainerStyle}>
         <img src={props.src} alt={props.alt} />
       </div>
-      <span style={titleContainerStyles}>
+      </Link>
+
+       <Link to={props.linkSrc}>
         <h3 style={titleStyles}>{props.title}</h3>
-      </span>
+       </Link>
+     
     </div>
   )
 }

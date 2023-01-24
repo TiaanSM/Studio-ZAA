@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar/Navbar";
 import useScrollPercentage from '../components/useScrollPercentage';
 import styles from '../components/styles/NavProjects.module.css';
 import PageChange from '../components/PageChange';
+import ProjectImageNav from "../components/Project/ProjectImageNav";
 
 
 const NavProjects = () => {
@@ -13,21 +14,33 @@ const NavProjects = () => {
     
     <section  className={styles.section} ref={scrollRef}>
         <PageChange />
-    <Navbar scrollProgress={scrollPercentage} />
-        <div className={styles.imageContainer} >
-            <img src="" alt="" className={styles.image} />
-            <img src="" alt="" className={styles.image} />
-            <img src="" alt="" className={styles.image} />
-        </div>
+        <Navbar scrollProgress={scrollPercentage} />
 
-        <aside className={styles.textContainer}>
-            <div className={styles.coverBlock}></div>
-            <ul className={styles.projects}>
-                <li className={styles.projectName}>Malbury Ocean View</li>
-                <li className={styles.projectName}>Grover Complex</li>
-                <li className={styles.projectName}>Wineland Golf Field</li>  
-            </ul>
-        </aside>
+        <div className={styles.container}></div>
+        
+        <ProjectImageNav 
+            title="Malbury Ocean View"
+            positionTop="50vh"
+            linkSrc="Malbury-Ocean-View"
+        />
+        
+        <ProjectImageNav 
+            title="Grover Complex"
+            positionTop="57vh"
+            linkSrc="Grover-Complex"
+        />
+        
+        <ProjectImageNav 
+            title="Wineland Golf Field"
+            positionTop="64vh"
+            linkSrc="Wineland-Golf-Field"
+        />
+
+        <ProjectImageNav 
+            title="Coming Soon"
+            positionTop="71vh"
+        /> 
+        
 
     </section>
   )

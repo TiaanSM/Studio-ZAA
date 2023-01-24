@@ -166,7 +166,7 @@ const Home = () => {
             </h3>
 
             <p className={secStyles.descLink}>Focusing on <a className={secStyles.a}>Commercial</a> & <a className={secStyles.a}>Residential</a> Projects</p>
-            <Link to="/Projects">
+            <Link to="/Project">
             <p className={secStyles.projectLink}>View All Projects</p>
             </Link>
           </div>

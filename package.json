@@ -25,6 +25,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.4.3",
     "react-scroll-parallax": "^3.3.2",
+    "react-use-scroll-snap": "^0.0.4",
     "yup": "^0.32.11"
   },
   "devDependencies": {
