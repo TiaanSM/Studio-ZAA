@@ -31,6 +31,7 @@ import PageChange from '../components/PageChange';
 import useScrollPercentage from '../components/useScrollPercentage';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 import '../App.css';
 
@@ -49,10 +50,27 @@ const Home = () => {
     triggerOnce: true
   });
 
+  const [playAnimation, setPlayAnimation] = useState(false);
+
+    
+    useEffect(() => {
+    const onPageLoad = () => {
+      setPlayAnimation(true);
+    };
+
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad);
+      
+      return () => window.removeEventListener('load', onPageLoad);
+    }
+    }, []);
+
 
   return (
     <>
-      <PageChange />
+      <PageChange pageLoaded={playAnimation} />
       <Navbar scrollProgress={scrollPercentage} />
       
       <div className="scroll-container" ref={scrollRef} >
@@ -62,9 +80,9 @@ const Home = () => {
         <header className={styles.header}>
           <a href="/"><img src={logo} alt="logo" className={styles.logo} /></a>
             <div className={styles.imageContainer}>
-              <img className={styles.image} src={headerImage} alt="house-image"/>
+              <img className={playAnimation === true ? styles.imageAnimated : styles.image} src={headerImage} alt="house-image"/>
             </div>
-              <h1 className={styles.title}>Building Beyond</h1>
+              <h1 className={playAnimation === true ? styles.titleAnimated : styles.title}>Building Beyond</h1>
               <p className={styles.desc}>
                 We are a South African architecture and design studio with a 
                 global reputation for creating innovative spaces.

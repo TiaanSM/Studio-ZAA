@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar';
 import useScrollPercentage from '../components/useScrollPercentage';
 import '../App.css';
 import PageChange from '../components/PageChange';
+import { useEffect, useState } from 'react';
 
 const ArticleTwo = () => {
 
@@ -41,11 +42,28 @@ const ArticleTwo = () => {
         backgroundColor: 'black'
     };
 
+    const [playAnimation, setPlayAnimation] = useState(false);
+
+    
+    useEffect(() => {
+    const onPageLoad = () => {
+      setPlayAnimation(true);
+    };
+
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad);
+      
+      return () => window.removeEventListener('load', onPageLoad);
+    }
+    }, []);
+
 
   return (
     
       <>
-      <PageChange />
+      <PageChange pageLoaded={playAnimation} />
       <Navbar scrollProgress={scrollPercentage}/>
       <div className="scroll-container" ref={scrollRef} >
         <div className="content-container">

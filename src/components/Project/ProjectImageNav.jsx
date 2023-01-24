@@ -13,6 +13,12 @@ const ProjectImageNav = (props) => {
       position: 'relative',
     }
 
+    const imageStyles = {
+      width: '50vw',
+      height: '100vh',
+      objectFit: 'cover'
+    }
+
     const { ref, inView } = useInView({
       /* Optional options */
       threshold: .65,
@@ -36,7 +42,7 @@ const ProjectImageNav = (props) => {
       
       <Link to={props.linkSrc}>
       <div ref={ref} className={styles.imageContainerStyle}>
-        <img src={props.src} alt={props.alt} />
+        <img src={props.src} alt={props.alt} style={imageStyles} />
       </div>
       </Link>
 

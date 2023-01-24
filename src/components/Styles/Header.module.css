@@ -31,11 +31,29 @@
     object-fit: cover;
     filter: brightness(60%);
     transform: scale(1.5);
+}
+.imageAnimated {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(60%);
+    transform: scale(1.5);
     animation: scaleImage 1.5s ease forwards;
     animation-delay: 0.5s;
 }
 
 .title {
+    width: calc(100% - 3rem);
+    height: 30%;
+    text-align: center;
+    position: absolute;
+    color: white;
+    font-size: 11rem;
+    bottom: 1rem;
+    font-weight: 400;
+    opacity: 0;
+}
+.titleAnimated {
     width: calc(100% - 3rem);
     height: 30%;
     text-align: center;

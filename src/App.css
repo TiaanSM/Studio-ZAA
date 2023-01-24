@@ -41,40 +41,67 @@ body {
     transform: rotate(90deg) translateY(-100vh);
 }
 
-.animated-box1 {
+.box1 {
     width: 33%;
     height: 105vh;
     background-color: #F06446;
-    animation: slideUp 1s ease-out forwards;
-    animation-delay: 1.4s;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 100;
 }
-.animated-box2 {
+.box2 {
     width: 34%;
     height: 105vh;
     background-color: #F06446;
-    animation: slideUp 1s ease-out forwards;
-    animation-delay: 1.7s;
     position: absolute;
     top: 0;
     left: 33%;
     z-index: 100;
 }
-.animated-box3 {
+.box3 {
     width: 35%;
     height: 105vh;
     background-color: #F06446;
-    animation: slideUp 1s ease-out forwards;
-    animation-delay: 2s;
     position: absolute;
     top: 0;
     left: 66%;
     z-index: 100;
 }
 
+.animated-box-1 {
+    width: 33%;
+    height: 105vh;
+    background-color: #F06446;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    animation: slideUp 1s ease-out forwards;
+    animation-delay: 0.4s;
+}
+.animated-box-2 {
+    width: 34%;
+    height: 105vh;
+    background-color: #F06446;
+    position: absolute;
+    top: 0;
+    left: 33%;
+    z-index: 100;
+    animation: slideUp 1s ease-out forwards;
+    animation-delay: 0.7s;
+}
+.animated-box-3 {
+    width: 35%;
+    height: 105vh;
+    background-color: #F06446;
+    position: absolute;
+    top: 0;
+    left: 66%;
+    z-index: 100;
+    animation: slideUp 1s ease-out forwards;
+    animation-delay: 1s;
+}
 
 @keyframes slideUp {
     from {

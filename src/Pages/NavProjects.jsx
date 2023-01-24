@@ -4,16 +4,38 @@ import styles from '../components/styles/NavProjects.module.css';
 import PageChange from '../components/PageChange';
 import ProjectImageNav from "../components/Project/ProjectImageNav";
 
+import image1 from '../assets/img/projectImage4.webp';
+import image2 from '../assets/img/projectImage5.webp';
+import image3 from '../assets/img/projectImage6.webp';
+
+import { useEffect, useState } from 'react';
+
 
 const NavProjects = () => {
 
     const [scrollRef, scrollPercentage] = useScrollPercentage();
 
+    const [playAnimation, setPlayAnimation] = useState(false);
+
+    useEffect(() => {
+        const onPageLoad = () => {
+          setPlayAnimation(true);
+        };
+    
+        if (document.readyState === 'complete') {
+          onPageLoad();
+        } else {
+          window.addEventListener('load', onPageLoad);
+          
+          return () => window.removeEventListener('load', onPageLoad);
+        }
+        }, []);
+
     
   return (
     
     <section  className={styles.section} ref={scrollRef}>
-        <PageChange />
+        <PageChange pageLoaded={playAnimation} />
         <Navbar scrollProgress={scrollPercentage} />
 
         <div className={styles.container}></div>
@@ -22,18 +44,21 @@ const NavProjects = () => {
             title="Malbury Ocean View"
             positionTop="50vh"
             linkSrc="Malbury-Ocean-View"
+            src={image1}
         />
         
         <ProjectImageNav 
             title="Grover Complex"
             positionTop="57vh"
             linkSrc="Grover-Complex"
+            src={image2}
         />
         
         <ProjectImageNav 
             title="Wineland Golf Field"
             positionTop="64vh"
             linkSrc="Wineland-Golf-Field"
+            src={image3}
         />
 
         <ProjectImageNav 
