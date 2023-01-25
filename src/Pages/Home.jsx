@@ -66,6 +66,7 @@ const Home = () => {
       return () => window.removeEventListener('load', onPageLoad);
     }
     }, []);
+    
 
 
   return (
@@ -80,7 +81,10 @@ const Home = () => {
         <header className={styles.header}>
           <a href="/"><img src={logo} alt="logo" className={styles.logo} /></a>
             <div className={styles.imageContainer}>
-              <img className={playAnimation === true ? styles.imageAnimated : styles.image} src={headerImage} alt="house-image"/>
+              <img 
+                className={playAnimation === true ? styles.imageAnimated : styles.image} 
+                src="https://ik.imagekit.io/x29dtqzji/headerImg__1_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674578566091"
+              />
             </div>
               <h1 className={playAnimation === true ? styles.titleAnimated : styles.title}>Building Beyond</h1>
               <p className={styles.desc}>
@@ -198,7 +202,7 @@ const Home = () => {
               inspires. Let's work towards 
               something bigger and brighter.
             </h3>
-            <Link to="/Journal">
+            <Link to="/Journal" className={secStyles.journalLink}>
               <p className={secStyles.articleLink}>View All Articles</p>
             </Link>
             <h4 className={inView ? secStyles.animatedTitle : secStyles.journalTitle}>Journal</h4>

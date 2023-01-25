@@ -1,4 +1,5 @@
 import { useInView } from 'react-intersection-observer';
+import '../App.css';
 
 const Image = (props) => {
 
@@ -47,6 +48,8 @@ const Image = (props) => {
       const linkStyles = {
         color: isMobile ? props.color : 'black',
         textDecoration: isMobile ? `${props.color} underline` : 'black underline',
+        fontFamily: 'the-serif',
+        fontSize: '14px'
       }
 
 

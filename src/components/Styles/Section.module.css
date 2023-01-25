@@ -36,8 +36,10 @@
 
 .descLink {
     padding-top: 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
+    font-size: 15px;
+    font-family: the-serif;
 }
 
 .projectLink {
@@ -46,6 +48,8 @@
     bottom: 4rem;
     left: calc(100% - 50% - (112px / 2) );
     text-decoration: underline;
+    font-family: the-serif;
+    font-size: 14px;
 }
 
 
@@ -78,10 +82,16 @@
     text-decoration: underline;
 }
 
+.journalLink {
+    text-decoration: none;
+}
+
 .articleLink {
     color: white;
     padding-left: 3rem;
     text-decoration: underline;
+    font-size: 15px;
+    font-family: the-serif;
 }
 
 .journalTitle {

@@ -17,6 +17,7 @@ const ArticleOne = lazy(() => import('./Pages/ArticleOne'));
 const ArticleTwo = lazy(() => import('./Pages/ArticleTwo'));
 const ArticleThree = lazy(() => import('./Pages/ArticleThree'));
 
+
 function App() {
   
   
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className="App"  >
     <Suspense fallback={ <Loading /> }>
+      
       <Routes>
       
         <Route path="/" element={ <Home/> } />
@@ -45,8 +47,9 @@ function App() {
         <Route path="Article/Architecture-and-change" element={ <ArticleOne />} />
         <Route path="Article/Modern-Design-And-Architecture" element={ <ArticleTwo /> } />
         <Route path="Article/Eco-Friendly-Designing" element={ <ArticleThree /> } />
-       
+        
       </Routes>
+      
     </Suspense>
     </div>
       

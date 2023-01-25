@@ -109,7 +109,7 @@
         filter: brightness(75%);
     }
 
-    .title {
+    .titleAnimated {
         width: 100%;
         font-size: 2rem;
         font-size: clamp(2rem, -0.8571428571428568rem + 14.285714285714285vw, 6rem);
@@ -132,7 +132,7 @@
 
 @media (max-width: 400px) {
 
-    .title {
+    .titleAnimated {
         width: auto;
         position: absolute;
         height: 3rem;
@@ -142,6 +142,6 @@
 
     .desc {
         left: -0.5rem;
-        padding-left: 2rem;
+        padding-inline: 2rem;
     }
 }

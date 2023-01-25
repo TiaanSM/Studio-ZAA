@@ -1,3 +1,10 @@
+@font-face {
+    font-family: the-serif;
+    src: url('./assets/theseriflight-capsitalic.otf');
+    font-weight: light;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;

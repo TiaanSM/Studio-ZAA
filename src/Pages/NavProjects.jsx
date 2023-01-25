@@ -8,6 +8,8 @@ import image1 from '../assets/img/projectImage4.webp';
 import image2 from '../assets/img/projectImage5.webp';
 import image3 from '../assets/img/projectImage6.webp';
 
+import Image from '../components/Image.jsx';
+
 import { useEffect, useState } from 'react';
 
 
@@ -16,6 +18,8 @@ const NavProjects = () => {
     const [scrollRef, scrollPercentage] = useScrollPercentage();
 
     const [playAnimation, setPlayAnimation] = useState(false);
+
+    const isMobile = window.innerWidth < 768;
 
     useEffect(() => {
         const onPageLoad = () => {
@@ -37,8 +41,8 @@ const NavProjects = () => {
     <section  className={styles.section} ref={scrollRef}>
         <PageChange pageLoaded={playAnimation} />
         <Navbar scrollProgress={scrollPercentage} />
-
-        <div className={styles.container}></div>
+ 
+      <div className={styles.container}>
         
         <ProjectImageNav 
             title="Malbury Ocean View"
@@ -65,7 +69,7 @@ const NavProjects = () => {
             title="Coming Soon"
             positionTop="71vh"
         /> 
-        
+        </div>
 
     </section>
   )

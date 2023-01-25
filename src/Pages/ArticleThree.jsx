@@ -13,7 +13,6 @@ const ArticleThree = () => {
 
     const paragraphContainerStyle = {
         width: '600px',
-        height: '100vh',
         width: isMobile ? '100%' : '600px',
         height: isMobile ? 'auto' : '100vh',
         backgroundColor: 'whitesmoke',

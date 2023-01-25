@@ -341,7 +341,7 @@
         margin-top: 22rem;
     }
 
-    .contactLink, .aboutLink, .journalLink, .projectsLink {
+    .linkText > p {
         color: white;
     }
 
