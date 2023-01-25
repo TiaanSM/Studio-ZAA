@@ -1,6 +1,5 @@
 // header imports
 import styles from '../components/Styles/Header.module.css';
-import headerImage from '../assets/img/headerImg.webp';
 import logo from '../assets/img/Logo.png';
 
 // intro imports

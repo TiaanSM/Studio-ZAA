@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar/Navbar";
 import Image from "../components/Image";
 import useScrollPercentage from "../components/useScrollPercentage"
-import styles from '../components/styles/Contact.module.css';
+import styles from '../components/Styles/Contact.module.css';
 import introImage from '../assets/img/introImage.webp';
 import PageChange from '../components/PageChange';
 import { useEffect, useState } from 'react';
