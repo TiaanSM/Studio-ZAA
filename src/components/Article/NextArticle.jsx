@@ -1,22 +1,12 @@
 import styles from './Article.module.css';
+import { Link } from 'react-router-dom';
 
 const nextArticle = (props) => {
 
 
-    const textContainerStyle = {
-        
-    }
-
-    const linkStyle = {
-        
-    }
-
-    const titleStyle = {
-        
-    }
-
   return (
-    <section className={styles.nextSection}>
+    <section>
+      <Link to={props.nextArticleLink} className={styles.nextSection}>
         <div className={styles.nextImageContainer}>
             <img src="" alt="" className={styles.nextImage} />
         </div>
@@ -24,6 +14,7 @@ const nextArticle = (props) => {
             <p className={styles.nextLink}>Next Article</p>
             <h4 className={styles.nextTitle}>{props.nextArticle}</h4>
         </div>
+      </Link>
     </section>
   )
 }

@@ -113,7 +113,10 @@ const ArticleThree = () => {
 
         <img src="" alt="" style={smallImageStyle} />
 
-        <NextArticle nextArticle="Multi Level Housing Benefits" />
+        <NextArticle 
+        nextArticle="Architecture And Change" 
+        nextArticleLink="/Article/Architecture-and-change"
+        />
         </div>
       </div>
     </>

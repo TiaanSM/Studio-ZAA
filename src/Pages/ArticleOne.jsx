@@ -127,7 +127,10 @@ const ArticleOne = () => {
             </p>
         </div>
 
-        <NextArticle nextArticle="Modern Design And Architecture" />
+        <NextArticle 
+        nextArticle="Modern Design And Architecture" 
+        nextArticleLink="/Article/Modern-Design-And-Architecture"
+        />
         </div>
       </div>
     </>

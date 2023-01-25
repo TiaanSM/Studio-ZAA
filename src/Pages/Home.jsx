@@ -108,8 +108,8 @@ const Home = () => {
             Being bold. Exploring the new. Where the surprising delights the 
             mind. Where people love to live, work and play. Let's start 
             building beyond.</p>
-          <Link to="/About">
-            <p className={introStyles.link}>Learn More About Us</p>
+          <Link to="/About" className={introStyles.link}>
+            <p>Learn More About Us</p>
           </Link>
         </div>
 
@@ -187,7 +187,7 @@ const Home = () => {
               something bigger and brighter.
             </h3>
 
-            <p className={secStyles.descLink}>Focusing on <a className={secStyles.a}>Commercial</a> & <a className={secStyles.a}>Residential</a> Projects</p>
+            <span className={secStyles.descLink}>Focusing on <span className={secStyles.a}>Commercial</span> & <span className={secStyles.a}>Residential</span> Projects</span>
             <Link to="/Project">
             <p className={secStyles.projectLink}>View All Projects</p>
             </Link>

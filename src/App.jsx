@@ -2,12 +2,14 @@ import './App.css';
 import { lazy , Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Home from './Pages/Home';
-import Contact from './Pages/Contact';
-import NavProjects from './Pages/NavProjects';
-import NavJournal from './Pages/NavJournal';
-import About from './Pages/About';
 import Loading from './components/Project/Loading';
+import Home from './Pages/Home';
+
+const Contact = lazy(() => import('./Pages/Contact'));
+const NavJournal = lazy(() => import('./Pages/NavJournal'));
+const NavProjects = lazy(() => import('./Pages/NavProjects'));
+const About = lazy(() => import('./Pages/About'));
+
 
 const ProjectOne = lazy(() => import('./Pages/ProjectOne'));
 const ProjectTwo = lazy(() => import('./Pages/ProjectTwo'));

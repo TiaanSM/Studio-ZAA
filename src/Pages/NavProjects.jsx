@@ -1,17 +1,9 @@
 import Navbar from "../components/Navbar/Navbar";
 import useScrollPercentage from '../components/useScrollPercentage';
-import styles from '../components/styles/NavProjects.module.css';
+import styles from '../components/styles/NavJournal.module.css';
+import ArticleImage from '../assets/img/articleImage2.webp';
 import PageChange from '../components/PageChange';
-import ProjectImageNav from "../components/Project/ProjectImageNav";
-
-import image1 from '../assets/img/projectImage4.webp';
-import image2 from '../assets/img/projectImage5.webp';
-import image3 from '../assets/img/projectImage6.webp';
-
-import Image from '../components/Image.jsx';
-
 import { useEffect, useState } from 'react';
-
 
 const NavProjects = () => {
 
@@ -19,58 +11,99 @@ const NavProjects = () => {
 
     const [playAnimation, setPlayAnimation] = useState(false);
 
-    const isMobile = window.innerWidth < 768;
-
+    
     useEffect(() => {
-        const onPageLoad = () => {
-          setPlayAnimation(true);
-        };
-    
-        if (document.readyState === 'complete') {
-          onPageLoad();
-        } else {
-          window.addEventListener('load', onPageLoad);
-          
-          return () => window.removeEventListener('load', onPageLoad);
-        }
-        }, []);
+    const onPageLoad = () => {
+      setPlayAnimation(true);
+    };
 
-    
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad);
+      
+      return () => window.removeEventListener('load', onPageLoad);
+    }
+    }, []);
+
   return (
-    
-    <section  className={styles.section} ref={scrollRef}>
+    <section className={styles.section} ref={scrollRef}>
         <PageChange pageLoaded={playAnimation} />
         <Navbar scrollProgress={scrollPercentage} />
- 
-      <div className={styles.container}>
-        
-        <ProjectImageNav 
-            title="Malbury Ocean View"
-            positionTop="50vh"
-            linkSrc="Malbury-Ocean-View"
-            src={image1}
-        />
-        
-        <ProjectImageNav 
-            title="Grover Complex"
-            positionTop="57vh"
-            linkSrc="Grover-Complex"
-            src={image2}
-        />
-        
-        <ProjectImageNav 
-            title="Wineland Golf Field"
-            positionTop="64vh"
-            linkSrc="Wineland-Golf-Field"
-            src={image3}
-        />
+        <div className={styles.mainContainer}>
+            <div className={styles.headingContainer}>
+                <h1 className={styles.title}>Projects</h1>
+            </div>
+            <div className={styles.mainImageContainer}>
 
-        <ProjectImageNav 
-            title="Coming Soon"
-            positionTop="71vh"
-        /> 
+                <div className={styles.contentContainer}>
+                
+                  <div className={styles.imageContainer}>
+
+                   <img src={ArticleImage} alt="" className={styles.sideImage} />
+                    <div className={styles.textContainer}>
+                        <h4 className={styles.articleTitle}>Malbury Ocean View</h4>
+                        <p className={styles.link}>View Project</p>
+                    </div>
+                    </div>
+
+                    <div className={styles.imageContainer}>
+                   <img src={ArticleImage} alt="" className={styles.sideImage} />
+                   
+                    <div className={styles.textContainer}>
+                        <h4 className={styles.articleTitle}>Placeholder</h4>
+                        <p className={styles.link}>View Project</p>
+                    </div>
+                    </div>
+        
+                </div>
+
+                <div className={styles.contentContainer}>
+                
+                    <div className={styles.imageContainer}>
+
+                   <img src={ArticleImage} alt="" className={styles.centerImage} />
+                    <div className={styles.textContainer}>
+                        <h4 className={styles.articleTitle}>Grover Complex</h4>
+                        <p className={styles.link}>View Project</p>
+                    </div>
+                    </div>
+
+                    <div className={styles.imageContainer}>
+                   <img src={ArticleImage} alt="" className={styles.centerImage} />
+                    <div className={styles.textContainer}>
+                        <h4 className={styles.articleTitle}>Placeholder</h4>
+                        <p className={styles.link}>View Project</p>
+                    </div>
+                    </div>
+                   
+                </div>
+
+                <div className={styles.contentContainer}>
+                
+                   <div className={styles.imageContainer}>
+                   <img src={ArticleImage} alt="" className={styles.sideImage} />
+                    <div className={styles.textContainer}>
+                        <h4 className={styles.articleTitle}>Wineland Golf Field</h4>
+                        <p className={styles.link}>View Project</p>
+                    </div>
+                    </div>
+
+                    <div className={styles.imageContainer}>
+                   <img src={ArticleImage} alt="" className={styles.sideImage} />
+                    <div className={styles.textContainer}>
+                        <h4 className={styles.articleTitle}>Placeholder</h4>
+                        <p className={styles.link}>View Project</p>
+                    </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div className={styles.toTopContainer}>
+                <p>Back to top</p>
+            </div>
         </div>
-
     </section>
   )
 }

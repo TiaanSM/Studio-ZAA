@@ -114,7 +114,10 @@ const ArticleTwo = () => {
             </p>
         </div>
 
-        <NextArticle nextArticle="Eco Friendly Designing" />
+        <NextArticle 
+        nextArticle="Eco Friendly Designing" 
+        nextArticleLink="/Article/Eco-Friendly-Designing"
+        />
         </div>
       </div>
     </>
