@@ -12,7 +12,6 @@ const ArticleTwo = () => {
     const isMobile = window.innerWidth < 768;
 
     const paragraphContainerStyle = {
-        height: '100vh',
         width: isMobile ? '100%' : '600px',
         height: isMobile ? 'auto' : '100vh',
         backgroundColor: 'whitesmoke',
