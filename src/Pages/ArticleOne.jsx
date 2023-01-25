@@ -13,7 +13,6 @@ const ArticleOne = () => {
     const isMobile = window.innerWidth < 768;
 
     const paragraphContainerStyle = {
-        width: '600px',
         height: '100vh',
         width: isMobile ? '100%' : '600px',
         height: isMobile ? 'auto' : '100vh',
@@ -22,7 +21,6 @@ const ArticleOne = () => {
     };
 
     const paragraphTextStyle = {
-      padding: '3rem',
       padding: isMobile ? '2rem' : '3rem',
       fontSize: isMobile ? '1.1rem' : '1rem',
       lineHeight: isMobile ? '1.5rem' : '1rem'
