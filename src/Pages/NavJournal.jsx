@@ -44,7 +44,7 @@ const NavJournal = () => {
               <div className={styles.contentContainer}>
                 
                 <ImageItem 
-                    imgSrc={ArticleImage}
+                    imgSrc="https://ik.imagekit.io/x29dtqzji/tr:w-700/projectImage2.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674739236661"
                     imgAlt="house-image"
                     title="Architecture and Change"
                     link="Read More"
@@ -62,7 +62,7 @@ const NavJournal = () => {
               <div className={styles.contentContainer}>
 
                 <ImageItem 
-                    imgSrc={ArticleImage}
+                    imgSrc="https://ik.imagekit.io/x29dtqzji/tr:w-700/articleImage2.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674739237050"
                     imgAlt="house-image"
                     title="Modern Design And Architecture"
                     link="Read More"
@@ -82,7 +82,7 @@ const NavJournal = () => {
               <div className={styles.contentContainer}>
                 
                 <ImageItem 
-                    imgSrc={ArticleImage}
+                    imgSrc="https://ik.imagekit.io/x29dtqzji/tr:w-700/projectImage3.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674739237239"
                     imgAlt="house-image"
                     title="Eco Friendly Designing"
                     link="Read More"

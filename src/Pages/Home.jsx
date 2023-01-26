@@ -4,23 +4,15 @@ import logo from '../assets/img/Logo.png';
 
 // intro imports
 import introStyles from '../components/Styles/Intro.module.css';
-import introImage from '../assets/img/introImage.webp';
 
 // projects imports
 import projStyles from '../components/Styles/Projects.module.css';
-import image1 from '../assets/img/projectImage4.webp';
-import image2 from '../assets/img/projectImage5.webp';
-import image3 from '../assets/img/projectImage6.webp';
 
 // section imports
 import secStyles from '../components/Styles/Section.module.css';
-import sectionImage from '../assets/img/sectionImage.webp';
 
 // articles imports
 import artStyles from '../components/Styles/Articles.module.css';
-import articleImage from '../assets/img/projectImage2.webp';
-import articleImage2 from '../assets/img/articleImage2.webp';
-import articleImage3 from '../assets/img/projectImage3.webp';
 
 // imports
 import Navbar from '../components/Navbar/Navbar';
@@ -82,7 +74,11 @@ const Home = () => {
             <div className={styles.imageContainer}>
               <img 
                 className={playAnimation === true ? styles.imageAnimated : styles.image} 
-                src="https://ik.imagekit.io/x29dtqzji/headerImg__1_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674578566091"
+                src="https://ik.imagekit.io/x29dtqzji/tr:w-1600,h-1000/headerImg__1_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674578566091"
+                srcset='https://ik.imagekit.io/x29dtqzji/tr:w-450,h-1000/headerImg__1_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674578566091 400w,
+                https://ik.imagekit.io/x29dtqzji/tr:w-800,h-1000/headerImg__1_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674578566091 800w,
+                https://ik.imagekit.io/x29dtqzji/tr:w-1600,h-1000/headerImg__1_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674578566091 1400w'
+                sizes='(max-width: 400px) 400px, (max-width: 800px) 800px, 1400px'
               />
             </div>
               <h1 className={playAnimation === true ? styles.titleAnimated : styles.title}>Building Beyond</h1>
@@ -98,7 +94,10 @@ const Home = () => {
         
         <div className={introStyles.topContainer}>
           <h2 className={introStyles.title}>Introduction</h2>
-          <img src={introImage} alt="house-image" className={introStyles.introImage} />
+          <img src="https://ik.imagekit.io/x29dtqzji/tr:w-700,h-800/introImage.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674738239454" 
+          alt="house-image" 
+          className={introStyles.introImage} 
+          />
         </div>
 
         <div className={introStyles.bottomContainer}>
@@ -123,7 +122,7 @@ const Home = () => {
             <Image 
               width='100%' 
               height="530px" 
-              src={image1} 
+              src="https://ik.imagekit.io/x29dtqzji/tr:w-900/projectImage4.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674738239477"
               imagealt="house-image" 
             
               title="Malbury Ocean View"
@@ -141,7 +140,7 @@ const Home = () => {
             <Image 
               width='100%' 
               height="530px" 
-              src={image2} 
+              src="https://ik.imagekit.io/x29dtqzji/tr:w-900/projectImage5.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674738239418" 
               imagealt="house-image" 
              
               title="Grover Complex"
@@ -159,7 +158,7 @@ const Home = () => {
             <Image 
               width='100%' 
               height="530px" 
-              src={image3} 
+              src="https://ik.imagekit.io/x29dtqzji/tr:w-900/projectImage6.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674738298379"
               imagealt="house-image"    
              
               title="Wineland Golf Field"
@@ -192,7 +191,8 @@ const Home = () => {
             </Link>
           </div>
 
-          <img src={sectionImage} alt="House-Image" className={secStyles.mainImage}/>
+          <img src="https://ik.imagekit.io/x29dtqzji/tr:w-750/sectionImage.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674739236834" 
+          alt="House-Image" className={secStyles.mainImage}/>
 
           <div className={secStyles.journalContainer} ref={ref}>
 
@@ -217,7 +217,7 @@ const Home = () => {
             <Image 
               width='100%' 
               height="530px" 
-              src={articleImage2} 
+              src="https://ik.imagekit.io/x29dtqzji/tr:w-700/articleImage2.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674739237050" 
               imagealt="house-image" 
         
               displayTexts="inline-block" 
@@ -235,7 +235,7 @@ const Home = () => {
 
               <Image width='100%' 
                 height="222px" 
-                src={articleImage} 
+                src="https://ik.imagekit.io/x29dtqzji/tr:w-600/projectImage2.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674739236661"
                 imagealt="house-image" 
 
                 displayTexts="inline-block" 
@@ -253,7 +253,7 @@ const Home = () => {
               <Image 
                 width='100%' 
                 height="222px" 
-                src={articleImage3} 
+                src="https://ik.imagekit.io/x29dtqzji/tr:w-600/projectImage3.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674739237239"
                 imagealt="house-image"
                 displayTexts="inline-block" 
                 title="Eco Friendly Designing"

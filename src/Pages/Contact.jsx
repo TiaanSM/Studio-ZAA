@@ -2,7 +2,6 @@ import Navbar from "../components/Navbar/Navbar";
 import Image from "../components/Image";
 import useScrollPercentage from "../components/useScrollPercentage"
 import styles from '../components/Styles/Contact.module.css';
-import introImage from '../assets/img/introImage.webp';
 import PageChange from '../components/PageChange';
 import { useEffect, useState } from 'react';
 
@@ -60,7 +59,7 @@ const Contact = () => {
         <Image  
           width='40vw' 
           height="94vh" 
-          src={introImage} 
+          src="https://ik.imagekit.io/x29dtqzji/tr:w-700,h-800/introImage.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674738239454" 
           imagealt="house-image" 
           displayTexts="none" 
         />
