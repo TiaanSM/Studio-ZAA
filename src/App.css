@@ -2,6 +2,7 @@
     font-family: the-serif;
     src: url('./assets/theseriflight-capsitalic.otf');
     font-weight: light;
+    font-display: fallback;
 }
 
 

@@ -70,7 +70,7 @@ const Home = () => {
         
 
         <header className={styles.header}>
-          <a href="/"><img src={logo} alt="logo" className={styles.logo} /></a>
+          <a href="/home"><img src={logo} alt="logo" className={styles.logo} /></a>
             <div className={styles.imageContainer}>
               <img 
                 className={playAnimation === true ? styles.imageAnimated : styles.image} 
@@ -79,6 +79,7 @@ const Home = () => {
                 https://ik.imagekit.io/x29dtqzji/tr:w-800,h-1000/headerImg__1_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674578566091 800w,
                 https://ik.imagekit.io/x29dtqzji/tr:w-1600,h-1000/headerImg__1_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674578566091 1400w'
                 sizes='(max-width: 400px) 400px, (max-width: 800px) 800px, 1400px'
+                alt="header-house-image"
               />
             </div>
               <h1 className={playAnimation === true ? styles.titleAnimated : styles.title}>Building Beyond</h1>

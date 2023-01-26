@@ -41,8 +41,8 @@ const ProjectTwo = () => {
         location="Cape Town"
         completion="2020"
       />
-      <ProjectImages height="500px" />
-      <ProjectImages height="500px"/>
+      <ProjectImages height="500px" alt="project-house-image" />
+      <ProjectImages height="500px" alt="project-house-image" />
     </section>
   )
 }

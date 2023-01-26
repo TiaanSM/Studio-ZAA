@@ -1,6 +1,6 @@
 import './App.css';
 import { lazy , Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, redirect } from 'react-router-dom';
 
 import Loading from './components/Project/Loading';
 import Home from './Pages/Home';
@@ -29,7 +29,8 @@ function App() {
       
       <Routes>
       
-        <Route path="/" element={ <Home/> } />
+        <Route exact path="/" element={ <Home/> } />
+          
         <Route path="/Project" element={ <NavProjects /> } />
         <Route path="/Journal" element={ <NavJournal /> } />
         <Route path="/Contact" element={ <Contact /> } />
