@@ -8,7 +8,7 @@ const nextArticle = (props) => {
     <section>
       <Link to={props.nextArticleLink} className={styles.nextSection}>
         <div className={styles.nextImageContainer}>
-            <img src="" alt="" className={styles.nextImage} />
+            <img src={props.src} alt={props.alt} className={styles.nextImage} />
         </div>
         <div className={styles.nextTextContainer}>
             <p className={styles.nextLink}>Next Article</p>

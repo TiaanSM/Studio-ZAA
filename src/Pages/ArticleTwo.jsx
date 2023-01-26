@@ -65,7 +65,7 @@ const ArticleTwo = () => {
       <div className="scroll-container" ref={scrollRef} >
         <div className="content-container">
         <ArticleHero 
-        title="Modern Design And Architecture" 
+        title="Modern Housing Trends" 
         paragraphOne='The architecture of Richard Hywel Evans and his studio closely parallels key developments in 
         design, technology and urbanism over the past twenty-one years. 1997 feels almost antediluvian by
         modern standards, an era without social media, let alone the visual cornucopia of the online 
@@ -76,6 +76,8 @@ const ArticleTwo = () => {
         on the built environment. Architecture was building itself a nascent digital world, a low-resolution 
         culture that favoured spectacle and form over content and coherence."
         author="Johnathan Bell"
+        src="https://ik.imagekit.io/x29dtqzji/tr:w-900/projectImage2.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674739236661"
+        alt="house-image"
         />
         <div style={paragraphContainerStyle}>
             <p style={paragraphTextStyle}>
@@ -87,7 +89,7 @@ const ArticleTwo = () => {
             </p>
         </div>
 
-        <img src="" alt="house-image" style={smallImageStyle} />
+        <img src="https://ik.imagekit.io/x29dtqzji/tr:w-1200/pexels-vecislavas-popa-1643389.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750704863" alt="house-image" style={smallImageStyle} />
 
         <div style={paragraphContainerStyle}>
             <p style={paragraphTextStyle}>
@@ -99,7 +101,7 @@ const ArticleTwo = () => {
             </p>
         </div>
 
-        <img src="" alt="house-image" style={bigImageStyle} />
+        <img src="https://ik.imagekit.io/x29dtqzji/tr:w-1400/r-architecture-MAnVoJlQUvg-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750700928" alt="house-image" style={bigImageStyle} />
 
         <div style={paragraphContainerStyle}>
             <p style={paragraphTextStyle}>
@@ -114,6 +116,8 @@ const ArticleTwo = () => {
         <NextArticle 
         nextArticle="Eco Friendly Designing" 
         nextArticleLink="/Article/Eco-Friendly-Designing"
+        src="https://ik.imagekit.io/x29dtqzji/tr:w-850/projectImage3.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674739237239"
+        alt="house-image"
         />
         </div>
       </div>

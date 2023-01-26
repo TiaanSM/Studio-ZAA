@@ -232,7 +232,7 @@ const Home = () => {
 
           <div className={artStyles.container}>
             <div className={artStyles.articleContainer}>
-            <Link to="Article/Modern-Design-And-Architecture" className={artStyles.linkStyles}>
+            <Link to="Article/Modern-Housing-Trends" className={artStyles.linkStyles}>
 
               <Image width='100%' 
                 height="222px" 
@@ -240,7 +240,7 @@ const Home = () => {
                 imagealt="house-image" 
 
                 displayTexts="inline-block" 
-                title="Modern Design and Architecture"
+                title="Modern Housing Trends"
                 link="View Article"
                 color="white"
               />

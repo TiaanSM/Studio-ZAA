@@ -41,7 +41,7 @@ function App() {
         <Route path="Project/Wineland-Golf-Field" element={ <ProjectThree /> } />
 
         <Route path="Article/Architecture-and-change" element={ <ArticleOne />} />
-        <Route path="Article/Modern-Design-And-Architecture" element={ <ArticleTwo /> } />
+        <Route path="Article/Modern-Housing-Trends" element={ <ArticleTwo /> } />
         <Route path="Article/Eco-Friendly-Designing" element={ <ArticleThree /> } />
         
       </Routes>

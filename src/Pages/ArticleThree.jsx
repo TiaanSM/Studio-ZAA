@@ -75,6 +75,9 @@ const ArticleThree = () => {
         on the built environment. Architecture was building itself a nascent digital world, a low-resolution 
         culture that favoured spectacle and form over content and coherence."
         author="Johnathan Bell"
+        src="https://ik.imagekit.io/x29dtqzji/tr:w-1000/projectImage3.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674739237239"
+        alt="house-image"
+
         />
         <div style={paragraphContainerStyle}>
             <p style={paragraphTextStyle}>
@@ -86,7 +89,7 @@ const ArticleThree = () => {
             </p>
         </div>
 
-        <img src="" alt="house-image" style={smallImageStyle} />
+        <img src="https://ik.imagekit.io/x29dtqzji/tr:w-1200/pexels-max-vakhtbovych-8134821.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750704444" alt="house-image" style={smallImageStyle} />
 
         <div style={paragraphContainerStyle}>
             <p style={paragraphTextStyle}>
@@ -98,7 +101,7 @@ const ArticleThree = () => {
             </p>
         </div>
 
-        <img src="" alt="house-image" style={bigImageStyle} />
+        <img src="https://ik.imagekit.io/x29dtqzji/tr:w-1400/r-architecture-wDDfbanbhl8-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750699238" alt="house-image" style={bigImageStyle} />
 
         <div style={paragraphContainerStyle}>
             <p style={paragraphTextStyle}>
@@ -110,11 +113,21 @@ const ArticleThree = () => {
             </p>
         </div>
 
-        <img src="" alt="house-image" style={smallImageStyle} />
+        <img src="https://ik.imagekit.io/x29dtqzji/tr:w-1300/r-architecture-mHJiuZx2b8M-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750701286" alt="house-image" style={smallImageStyle} />
+
+        <div style={paragraphContainerStyle}>
+            <p style={paragraphTextStyle}>
+            Richard Hywel Evans began his studio in 1997. After studying at the Architectural Association in London, where his tutors included Nigel Coates and Daniel Weil. His final year saw him working with Peter Wilson which lead Hywel Evans to working with the Australian architects Daryl Jackson and Philip Cox and then on his return Richard Horden.<br/><br/>
+            The first projects he worked on focused on leisure and hospitality, from swimming pools and spas to hotels and luxury villas. Back in the UK, Studio RHE began by translating a fluid, organic aesthetic into retail and leisure projects, including the Sweatshop chain of sportswear.<br/><br/>
+            inging learning from his years spent designing for clients in sun-kissed holiday spots and far-flung destinations. In its form, materials and functionality, the building set new standards and was part of a general revival of interest in workplace design.<br/><br/>
+            </p>
+        </div>
 
         <NextArticle 
         nextArticle="Architecture And Change" 
         nextArticleLink="/Article/Architecture-and-change"
+        src="https://ik.imagekit.io/x29dtqzji/tr:w-1000/r-architecture-0tKCSyLXqQM-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750699792"
+        alt="house-image"
         />
         </div>
       </div>

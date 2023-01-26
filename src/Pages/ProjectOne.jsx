@@ -41,9 +41,23 @@ const ProjectOne = () => {
         location="Cape Town"
         completion="2019"
       />
-      <ProjectImages height="100vh" alt="project-house-image" />
-      <ProjectImages height="100vh" alt="project-house-image" />
-      <ProjectImages height="100vh" alt="project-house-image" />
+      <ProjectImages 
+        height="100vh" 
+        src="https://ik.imagekit.io/x29dtqzji/tr:w-1400/mueen-agherdien-H7yyV7IdH30-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750699944"
+        alt="project-house-image" 
+      />
+
+      <ProjectImages 
+        height="100vh" 
+        src="https://ik.imagekit.io/x29dtqzji/tr:w-1000/mueen-agherdien-GnEhnZPaN_w-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750699730"
+        alt="project-house-image" 
+      />
+
+      <ProjectImages 
+        height="100vh" 
+        src="https://ik.imagekit.io/x29dtqzji/tr:w-1200/mueen-agherdien-bW6JWZJWwmg-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750699751"
+        alt="project-house-image" 
+      />
     </section>
   )
 }

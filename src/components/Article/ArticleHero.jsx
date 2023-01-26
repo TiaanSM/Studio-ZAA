@@ -16,7 +16,7 @@ const ArticleHero = (props) => {
             <p className={styles.articleAuthor}><b>Written by</b><br/>{props.author}</p>
         </div>
         <div className={styles.imageContainer}>
-            <img src="" alt="" className={styles.articleImage} />
+            <img src={props.src} alt={props.alt} className={styles.articleImage} />
         </div>
     </section>
 
