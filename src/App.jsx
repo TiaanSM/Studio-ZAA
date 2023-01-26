@@ -22,13 +22,6 @@ const ArticleThree = lazy(() => import('./Pages/ArticleThree'));
 
 function App() {
   
-  
-  // document.onLoad triggers opening animation.
-  // add all images, optomized.
-  // all pages finished.
-  // all loading page switch animations working.
-  // clean up code, best practices.
-
 
   return (
     <div className="App"  >

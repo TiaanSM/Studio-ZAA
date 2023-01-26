@@ -42,7 +42,7 @@ const Image = (props) => {
         padding: '12px 0 8px 0',
         color: isMobile ? props.color : 'black',
         fontFamily: 'sans-serif',
-        fontSize: '14px'
+        fontSize: '1rem'
       }
     
       const linkStyles = {

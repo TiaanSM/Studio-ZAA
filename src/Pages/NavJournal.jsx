@@ -4,6 +4,7 @@ import styles from '../components/Styles/NavJournal.module.css';
 import ArticleImage from '../assets/img/articleImage2.webp';
 import PageChange from '../components/PageChange';
 import { useEffect, useState } from 'react';
+import ImageItem from "../components/ImageItem";
 
 const NavJournal = () => {
 
@@ -28,81 +29,80 @@ const NavJournal = () => {
 
   return (
     <section className={styles.section} ref={scrollRef}>
+
         <PageChange pageLoaded={playAnimation} />
         <Navbar scrollProgress={scrollPercentage} />
+
         <div className={styles.mainContainer}>
+
             <div className={styles.headingContainer}>
                 <h1 className={styles.title}>Journal</h1>
             </div>
+            
             <div className={styles.mainImageContainer}>
 
-                <div className={styles.contentContainer}>
+              <div className={styles.contentContainer}>
                 
-                  <div className={styles.imageContainer}>
+                <ImageItem 
+                    imgSrc={ArticleImage}
+                    imgAlt="house-image"
+                    title="Architecture and Change"
+                    link="Read More"
+                />
 
-                   <img src={ArticleImage} alt="" className={styles.sideImage} />
-                    <div className={styles.textContainer}>
-                        <h4 className={styles.articleTitle}>Architecture and change</h4>
-                        <p className={styles.link}>Read More</p>
-                    </div>
-                    </div>
-
-                    <div className={styles.imageContainer}>
-                   <img src={ArticleImage} alt="" className={styles.sideImage} />
-                   
-                    <div className={styles.textContainer}>
-                        <h4 className={styles.articleTitle}>Placeholder</h4>
-                        <p className={styles.link}>Read More</p>
-                    </div>
-                    </div>
+                <ImageItem 
+                    imgSrc={ArticleImage}
+                    imgAlt="house-image"
+                    title="Placeholder"
+                    link="Read More"
+                />
         
-                </div>
+              </div>
 
-                <div className={styles.contentContainer}>
+              <div className={styles.contentContainer}>
+
+                <ImageItem 
+                    imgSrc={ArticleImage}
+                    imgAlt="house-image"
+                    title="Modern Design And Architecture"
+                    link="Read More"
+                    height="500px"
+                />
+                    
+                <ImageItem 
+                    imgSrc={ArticleImage}
+                    imgAlt="house-image"
+                    title="Placeholder"
+                    link="Read More"
+                    height="500px"
+                />
+
+              </div>
+
+              <div className={styles.contentContainer}>
                 
-                    <div className={styles.imageContainer}>
+                <ImageItem 
+                    imgSrc={ArticleImage}
+                    imgAlt="house-image"
+                    title="Eco Friendly Designing"
+                    link="Read More"
+                />
 
-                   <img src={ArticleImage} alt="" className={styles.centerImage} />
-                    <div className={styles.textContainer}>
-                        <h4 className={styles.articleTitle}>Modern Design And Architecture</h4>
-                        <p className={styles.link}>Read More</p>
-                    </div>
-                    </div>
+                <ImageItem 
+                    imgSrc={ArticleImage}
+                    imgAlt="house-image"
+                    title="Placeholder"
+                    link="Read More"
+                />
 
-                    <div className={styles.imageContainer}>
-                   <img src={ArticleImage} alt="" className={styles.centerImage} />
-                    <div className={styles.textContainer}>
-                        <h4 className={styles.articleTitle}>Placeholder</h4>
-                        <p className={styles.link}>Read More</p>
-                    </div>
-                    </div>
-                   
-                </div>
-
-                <div className={styles.contentContainer}>
-                
-                   <div className={styles.imageContainer}>
-                   <img src={ArticleImage} alt="" className={styles.sideImage} />
-                    <div className={styles.textContainer}>
-                        <h4 className={styles.articleTitle}>Eco Friendly Designing</h4>
-                        <p className={styles.link}>Read More</p>
-                    </div>
-                    </div>
-
-                    <div className={styles.imageContainer}>
-                   <img src={ArticleImage} alt="" className={styles.sideImage} />
-                    <div className={styles.textContainer}>
-                        <h4 className={styles.articleTitle}>Placeholder</h4>
-                        <p className={styles.link}>Read More</p>
-                    </div>
-                    </div>
-
-                </div>
+              </div>
 
             </div>
+
             <div className={styles.toTopContainer}>
                 <p>Back to top</p>
             </div>
+
         </div>
     </section>
   )

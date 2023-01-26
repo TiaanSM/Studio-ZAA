@@ -97,12 +97,12 @@ const Home = () => {
         <section className={introStyles.intro}>
         
         <div className={introStyles.topContainer}>
-          <h3 className={introStyles.title}>Introduction</h3>
+          <h2 className={introStyles.title}>Introduction</h2>
           <img src={introImage} alt="house-image" className={introStyles.introImage} />
         </div>
 
         <div className={introStyles.bottomContainer}>
-          <h1 className={introStyles.heading}>Established 2022</h1>
+          <h3 className={introStyles.heading}>Established 2022</h3>
           <p className={introStyles.desc}>We are an architectural studio that believes in going further. 
             Being bold. Exploring the new. Where the surprising delights the 
             mind. Where people love to live, work and play. Let's start 
@@ -177,14 +177,14 @@ const Home = () => {
 
         <div className={secStyles.section}>
           <div className={secStyles.container}>
-            <h3 className={secStyles.title}>What We Do</h3>
+            <h2 className={secStyles.title}>What We Do</h2>
         
-            <h3 className={secStyles.heading}>
+            <p className={secStyles.heading}>
               Collaborating to create the 
               surprising with innovation that 
               inspires. Let's work towards 
               something bigger and brighter.
-            </h3>
+            </p>
 
             <span className={secStyles.descLink}>Focusing on <span className={secStyles.a}>Commercial</span> & <span className={secStyles.a}>Residential</span> Projects</span>
             <Link to="/Project">
@@ -196,15 +196,15 @@ const Home = () => {
 
           <div className={secStyles.journalContainer} ref={ref}>
 
-            <h3 className={secStyles.journalHeading}>Collaborating to create the 
+            <p className={secStyles.journalHeading}>Collaborating to create the 
               surprising with innovation that 
               inspires. Let's work towards 
               something bigger and brighter.
-            </h3>
+            </p>
             <Link to="/Journal" className={secStyles.journalLink}>
               <p className={secStyles.articleLink}>View All Articles</p>
             </Link>
-            <h4 className={inView ? secStyles.animatedTitle : secStyles.journalTitle}>Journal</h4>
+            <h3 className={inView ? secStyles.animatedTitle : secStyles.journalTitle}>Journal</h3>
           </div>
         </div>
 

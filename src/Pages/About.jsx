@@ -40,7 +40,7 @@ const About = () => {
           <div className="content-container">
 
         <div className={styles.headingContainer}>
-            <img src="" alt="" className={styles.headingImage} />
+            <img src="" alt="house-image" className={styles.headingImage} />
             <div className={styles.headTextContainer}>
                 <h4 className={styles.headTitle}>Where innnovation fires inspiration and challenges the norm.</h4>
             </div>
@@ -52,7 +52,7 @@ const About = () => {
                 <p className={styles.aboutDesc}>Studio RHE is a London based architecture and design practice with a global reputation for sustainable, bold and innovative residential, leisure and workplace environments. We are at the forefront of thinking on new trends in design, technology and architecture.<br/><br/>Our highly skilled team is renowned for the fast generation of concept ideas and hands-on project delivery. In tune with global fast changing markets, Studio RHE combines commercial know-how with creative originality.</p>
                 <h6 className={styles.aboutTitle}>South Africa</h6>
             </div>
-            <img src="" alt="" className={styles.aboutImage} />
+            <img src="" alt="house-image" className={styles.aboutImage} />
         </div>
 
         <div className={styles.processContainer}>
@@ -62,7 +62,7 @@ const About = () => {
                 <p className={styles.processDesc}>Our award winning architecture is the result of meaningful collaborations with our clients. We revel in thinking, making, constructing. We never compromise.<br/><br/>Listening and translating to circumstance allows us to craft a highly detailed, low energy architecture, authentic and real. Weaving teaching and research with the latest technology into a rich studio culture that creates space for the exceptional.</p>
             </div>
         </div>
-        <img src="" alt="" className={styles.processImage} />
+        <img src="" alt="house-image" className={styles.processImage} />
 
         <div className={styles.leadershipContainer}>
             <h6 className={styles.leadTitle}>Leadership Team</h6>
@@ -138,7 +138,7 @@ const About = () => {
                 <h6 className={styles.awardsTitle}>Awards</h6>
         </div>
 
-        <img src="" alt="" className={styles.finalImage} />
+        <img src="" alt="house-image" className={styles.finalImage} />
 
         <div className={styles.missionContainer}>
             <h6 className={styles.missionTitle}>Our Mission</h6>

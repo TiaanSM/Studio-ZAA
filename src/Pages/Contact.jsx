@@ -38,11 +38,11 @@ const Contact = () => {
         <div className={styles.textContainer}>
             <div className={styles.titleContainer}>
                 <p className={styles.heading}>Project Enquiry</p>
-                <h4 className={styles.title}>Want to enquire about building beyond?</h4>
+                <h1 className={styles.title}>Want to enquire about building beyond?</h1>
                 <p className={styles.formLink}>Let's Talk</p>
             </div>
             <div className={styles.linkContainer}>
-                <p className={styles.heading}>Details</p>
+                <h2 className={styles.heading}>Details</h2>
                 <ul className={styles.list}>
                     <li className={styles.link}>Studio ZAA</li>
                     <li className={styles.link}>8 Green Lews</li>

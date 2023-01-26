@@ -86,7 +86,7 @@ const ArticleThree = () => {
             </p>
         </div>
 
-        <img src="" alt="" style={smallImageStyle} />
+        <img src="" alt="house-image" style={smallImageStyle} />
 
         <div style={paragraphContainerStyle}>
             <p style={paragraphTextStyle}>
@@ -98,7 +98,7 @@ const ArticleThree = () => {
             </p>
         </div>
 
-        <img src="" alt="" style={bigImageStyle} />
+        <img src="" alt="house-image" style={bigImageStyle} />
 
         <div style={paragraphContainerStyle}>
             <p style={paragraphTextStyle}>
@@ -110,7 +110,7 @@ const ArticleThree = () => {
             </p>
         </div>
 
-        <img src="" alt="" style={smallImageStyle} />
+        <img src="" alt="house-image" style={smallImageStyle} />
 
         <NextArticle 
         nextArticle="Architecture And Change" 

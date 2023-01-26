@@ -3,8 +3,6 @@
 # Todo:
 
 1. Make page responsive.
-4. Text animations.
-9. Link pages.
-11. Color Scheme.
-12. Load screen animations.
-13. Page change animations.
+2. Add all images, optomized.
+3. Clean up code, best practices.
+4. Project 1,2,3 when final image inView show next project link.

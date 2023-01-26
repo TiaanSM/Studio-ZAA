@@ -127,7 +127,7 @@ body {
     }
 
     ::-webkit-scrollbar {
-        display: block;
+        display: contents;
         background-color: rgb(226, 226, 226);
     }
 

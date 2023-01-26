@@ -28,25 +28,3 @@ const ProjectImages = (props) => {
 }
 
 export default ProjectImages
-
-/*
-
-
-.image {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-} 
-
-
-
-.imageContainer {
-        width: 100vw;
-        height: 500px;
-    }
-
-    .image {
-        width: 100%;
-        height: 100%;
-    }
-*/

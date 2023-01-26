@@ -46,7 +46,7 @@
     cursor: pointer;
 }
 
-.contentContainer:nth-child(1), .contentContainer:nth-child(3) {
+.contentContainer:nth-child(1), .contentContainer:nth-child(3)  {
     position: relative;
     bottom: 100px;
 }
@@ -59,19 +59,13 @@
     object-fit: cover;
 }
 
-.centerImage {
-    width: 28vw;
-    height: 500px;
-    animation: imageZoomRev 0.5s ease forwards;
-}
-
-.sideImage {
+.Image {
     width: 28vw;
     height: 400px;
     animation: imageZoomRev 0.5s ease forwards;
 }
 
-.centerImage:hover, .sideImage:hover {
+.Image:hover {
     animation: imageZoom 0.5s ease forwards;
 }
 
@@ -92,6 +86,8 @@
 
 .link {
     text-decoration: underline;
+    font-family: the-serif;
+    font-size: 14px;
 }
 
 .toTopContainer {
