@@ -6,6 +6,7 @@
 .mainContainer {
     width: 100vw;
     height: auto;
+    position: relative;
 }
 
 .headingContainer {
@@ -35,34 +36,41 @@
     border-bottom: 1px solid gray;
 }
 
-.contentContainer {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 2rem;
-    cursor: pointer;
-}
+/* Image item */
 
-.contentContainer:nth-child(1), .contentContainer:nth-child(3)  {
-    position: relative;
-    bottom: 100px;
-}
-
-.imageContainer {
+.container {
     width: 28vw;
     height: auto;
     padding: 0 0 2rem 0;
+}
+
+.imageContainer {
+    width: 100%;
     overflow: hidden;
-    object-fit: cover;
+}
+
+.centerContainer > .imageContainer {
+    height: 500px;
+}
+
+.leftContainer, .centerContainer, .rightContainer {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.centerContainer {
+    top: 2.3rem;
+}
+
+.leftContainer, .rightContainer {
+    bottom: 4rem;
 }
 
 .Image {
     width: 28vw;
     height: 400px;
     animation: imageZoomRev 0.5s ease forwards;
+    object-fit: cover;
 }
 
 .Image:hover {
@@ -74,6 +82,7 @@
     width: 100%;
     height: auto;
     background-color: whitesmoke;
+    color: black;
 }
 
 .articleTitle {
@@ -82,12 +91,17 @@
     color: black;
     font-family: sans-serif;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .link {
     text-decoration: underline;
     font-family: the-serif;
     font-size: 14px;
+}
+
+.linkStyles {
+    text-decoration: none;
 }
 
 .toTopContainer {
@@ -100,6 +114,7 @@
 
 .toTopContainer > p {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 @keyframes imageZoom {
@@ -144,35 +159,27 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-top: 2rem;
     }
 
-    .contentContainer {
-        width: calc(100% - 4rem);
-        height: auto;
-        padding-top: 0;
+    .container {
+        width: calc(100vw - 4rem);
     }
 
-    .contentContainer:nth-child(1), .contentContainer:nth-child(3) {
+    .Image {
+        width: 100%;
+    }
+
+    .centerContainer {
+        top: 0rem;
+    }
+
+    .leftContainer, .rightContainer {
         bottom: 0;
     }
 
-    .contentContainer:nth-child(1) {
-        margin-top: 3rem;
-    }
-
-    .imageContainer {
-        width: 100%;
-        height: 750px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 2rem 0;
-    }
-
-    .centerImage, .sideImage {
-        width: 100%;
-        height: 700px;
+    .leftContainer, .centerContainer, .rightContainer {
+        padding-bottom: 0;
     }
 }
 
@@ -180,10 +187,16 @@
     .title {
         font-size: 7rem;
     }
+    .container {
+        width: calc(100vw - 3rem);
+    }
 }
 
 @media (max-width: 380px) {
     .title {
         font-size: 5rem;
+    }
+    .container {
+        width: calc(100vw - 2rem);
     }
 }

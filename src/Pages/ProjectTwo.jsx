@@ -17,6 +17,7 @@ const ProjectTwo = () => {
   const [playAnimation, setPlayAnimation] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0,0);
     const onPageLoad = () => {
       setPlayAnimation(true);
     };
