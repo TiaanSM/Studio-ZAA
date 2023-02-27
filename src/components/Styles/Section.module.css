@@ -118,6 +118,7 @@
     bottom: 0;
     left: 1.8rem;
     animation: titleAnimation 1s ease forwards;
+    overflow: hidden;
 }
 
 @keyframes titleAnimation {
