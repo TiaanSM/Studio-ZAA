@@ -1,7 +1,6 @@
 import Navbar from "../components/Navbar/Navbar";
 import useScrollPercentage from '../components/useScrollPercentage';
 import styles from '../components/Styles/NavJournal.module.css';
-import ArticleImage from '../assets/img/articleImage2.webp';
 import PageChange from '../components/PageChange';
 import { useEffect, useState } from 'react';
 import ImageItem from "../components/ImageItem";

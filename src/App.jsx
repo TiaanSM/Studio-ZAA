@@ -1,6 +1,6 @@
 import './App.css';
 import { lazy , Suspense } from 'react';
-import { Routes, Route, redirect } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Loading from './components/Project/Loading';
 import Home from './Pages/Home';
