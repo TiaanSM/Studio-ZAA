@@ -2,7 +2,6 @@ import styles from '../components/Styles/About.module.css';
 import Navbar from '../components/Navbar/Navbar';
 import useScrollPercentage from '../components/useScrollPercentage';
 import Image from '../components/Image';
-import image from '../assets/img/introImage.webp';
 import '../App.css';
 import PageChange from '../components/PageChange';
 
