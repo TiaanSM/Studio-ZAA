@@ -59,7 +59,6 @@ const Image = (props) => {
           src={props.src} 
           alt={props.imagealt} 
           style={imageStyles} 
-          loading="lazy" 
         />
       </div>
 

@@ -19,7 +19,7 @@ const ArticleOne = () => {
     };
 
     const paragraphTextStyle = {
-      padding: isMobile ? '2rem' : '3rem',
+      padding: isMobile ? '1.2rem' : '3rem',
       fontSize: isMobile ? '1.1rem' : '1rem',
       lineHeight: isMobile ? '1.5rem' : '1rem'
     };

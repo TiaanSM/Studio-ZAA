@@ -14,6 +14,7 @@ const Navbar = (props) => {
     const [openHamburger, setOpenHamburger] = useState(false);
     
     const isMobile = window.innerWidth < 768;
+
     const logoLinkStyles = {
       fontWeight: '500',
       fontSize: '12px',
@@ -46,34 +47,31 @@ const Navbar = (props) => {
         </div>
         
         <div className={openHamburger ? styles.openMenu : styles.closeMenu}>
+
           <div className={styles.contactLink}>
-          <Link to="/Contact" className={styles.linkStyles}>
-            <span className={styles.linkText}>
+            <Link to="/Contact" className={styles.linkText}>
               <p>Contact</p>
-            </span>
             </Link>
           </div>
+
           <div className={styles.journalLink}>
-          <Link to="/Journal" className={styles.linkStyles}>
-          <span className={styles.linkText}>
+            <Link to="/Journal" className={styles.linkText}>
               <p>Journal</p>
-            </span>
             </Link>
           </div>
+
           <div className={styles.projectsLink}>
-            <Link to="/Project" className={styles.linkStyles}>
-          <span className={styles.linkText}>
+            <Link to="/Project" className={styles.linkText}>
               <p>Projects</p>
-            </span>
             </Link>
           </div>
+
           <div className={styles.aboutLink}>
-          <Link to="/About" className={styles.linkStyles}>
-          <span className={styles.linkText}>
+            <Link to="/About" className={styles.linkText}>
               <p>About</p>
-            </span>
             </Link>
           </div>
+
         </div>
         
     </nav>

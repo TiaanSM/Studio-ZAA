@@ -131,7 +131,7 @@
     }
     .articleAuthor {
         font-size: 1rem;
-        padding-inline: 2rem;
+        padding-inline: 1.5rem;
         padding-bottom: 4rem;
         padding-top: 3rem;
     }
@@ -188,17 +188,26 @@
 
     .articleTitle {
         font-size: 4rem;
+        line-height: 4rem;
+        padding-inline: 1.5rem;
+    }
+    .articleDesc {
+        padding-inline: 1.5rem;
     }
 
     .nextTitle {
         font-size: 3rem;
         padding-inline: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 2.5rem;
     }
     .nextLink {
         padding-inline: 1.5rem;
     }
     .nextImageContainer {
         width: calc(100% - 3rem);
+        height: 400px;
     }
 }
 

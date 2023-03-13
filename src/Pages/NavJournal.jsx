@@ -9,6 +9,7 @@ const NavJournal = () => {
   const [scrollRef, scrollPercentage] = useScrollPercentage();
 
   return (
+    
     <section className={styles.section} ref={scrollRef}>
 
         <PageChange />
