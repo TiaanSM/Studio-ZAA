@@ -5,35 +5,15 @@ import Image from '../components/Image';
 import '../App.css';
 import PageChange from '../components/PageChange';
 
-import { useEffect, useState } from 'react';
-
 const About = () => {
 
     const [scrollRef, scrollPercentage] = useScrollPercentage();
     const isMobile = window.innerWidth < 768;
 
-    const [playAnimation, setPlayAnimation] = useState(false);
-
-    
-    useEffect(() => {
-    const onPageLoad = () => {
-      setPlayAnimation(true);
-    };
-
-    if (document.readyState === 'complete') {
-      onPageLoad();
-    } else {
-      window.addEventListener('load', onPageLoad);
-      
-      return () => window.removeEventListener('load', onPageLoad);
-    }
-    }, []);
-
-
   return (
 
     <section className={styles.about}>
-      <PageChange pageLoaded={playAnimation} />
+      <PageChange />
         <Navbar scrollProgress={scrollPercentage} />
         <div className="scroll-container" ref={scrollRef} >
           <div className="content-container">
@@ -73,7 +53,7 @@ const About = () => {
             <Image 
               width='490px' 
               height="530px" 
-              src={image} 
+              src=""
               imagealt="house-image" 
               padding={isMobile ? '2rem' : '0'}   
              
@@ -85,7 +65,7 @@ const About = () => {
             <Image 
               width='490px' 
               height="530px" 
-              src={image} 
+              src="" 
               imagealt="house-image"    
              
               title="Wineland Golf Field"
@@ -97,7 +77,7 @@ const About = () => {
             <Image 
               width='490px' 
               height="530px" 
-              src={image} 
+              src=""
               imagealt="house-image"    
              
               title="Wineland Golf Field"
@@ -109,7 +89,7 @@ const About = () => {
             <Image 
               width='490px' 
               height="530px" 
-              src={image} 
+              src=""
               imagealt="house-image"    
              
               title="Wineland Golf Field"

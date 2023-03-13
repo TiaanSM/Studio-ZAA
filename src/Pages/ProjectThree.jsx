@@ -6,34 +6,15 @@ import styles from '../components/Project/Project.module.css';
 
 import useScrollPercentage from '../components/useScrollPercentage';
 import PageChange from '../components/PageChange';
-import { useEffect, useState } from 'react';
-
 
 const ProjectThree = () => {
 
   const [scrollRef, scrollPercentage] = useScrollPercentage();
   const isMobile = window.innerWidth < 768;
 
-  const [playAnimation, setPlayAnimation] = useState(false);
-
-  useEffect(() => {
-    window.scrollTo(0,0);
-    const onPageLoad = () => {
-      setPlayAnimation(true);
-    };
-
-    if (document.readyState === 'complete') {
-      onPageLoad();
-    } else {
-      window.addEventListener('load', onPageLoad);
-      
-      return () => window.removeEventListener('load', onPageLoad);
-    }
-    }, []);
-
   return (
     <section className={styles.section} ref={scrollRef}>
-      <PageChange pageLoaded={playAnimation} />
+      <PageChange />
       <Navbar scrollProgress={scrollPercentage} />
 
       <ProjectSidebar 

@@ -22,7 +22,6 @@ import PageChange from '../components/PageChange';
 import useScrollPercentage from '../components/useScrollPercentage';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 
 import '../App.css';
 
@@ -41,29 +40,10 @@ const Home = () => {
     triggerOnce: true
   });
 
-  const [playAnimation, setPlayAnimation] = useState(false);
-
-    
-    useEffect(() => {
-      window.scrollTo(0,0);
-    const onPageLoad = () => {
-      setPlayAnimation(true);
-    };
-
-    if (document.readyState === 'complete') {
-      onPageLoad();
-    } else {
-      window.addEventListener('load', onPageLoad);
-      
-      return () => window.removeEventListener('load', onPageLoad);
-    }
-    }, []);
-    
-
 
   return (
     <>
-      <PageChange pageLoaded={playAnimation} />
+      <PageChange />
       <Navbar scrollProgress={scrollPercentage} />
       
       <div className="scroll-container" ref={scrollRef} >
@@ -74,7 +54,7 @@ const Home = () => {
           <a href="/home"><img src={logo} alt="logo" className={styles.logo} /></a>
             <div className={styles.imageContainer}>
               <img 
-                className={playAnimation === true ? styles.imageAnimated : styles.image} 
+                className={styles.imageAnimated} 
                 src="https://ik.imagekit.io/x29dtqzji/tr:w-1600,h-1000/headerImg__1_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674578566091"
                 srcset='https://ik.imagekit.io/x29dtqzji/tr:w-450,h-1000/headerImg__1_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674578566091 400w,
                 https://ik.imagekit.io/x29dtqzji/tr:w-800,h-1000/headerImg__1_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674578566091 800w,
@@ -83,7 +63,7 @@ const Home = () => {
                 alt="header-house-image"
               />
             </div>
-              <h1 className={playAnimation === true ? styles.titleAnimated : styles.title}>Building Beyond</h1>
+              <h1 className={styles.titleAnimated}>Building Beyond</h1>
               <p className={styles.desc}>
                 We are a South African architecture and design studio with a 
                 global reputation for creating innovative spaces.
@@ -206,7 +186,7 @@ const Home = () => {
             <Link to="/Journal" className={secStyles.journalLink}>
               <p className={secStyles.articleLink}>View All Articles</p>
             </Link>
-            <h3 className={inView ? secStyles.animatedTitle : secStyles.journalTitle}>Journal</h3>
+            <h3 className={secStyles.animatedTitle}>Journal</h3>
           </div>
         </div>
 

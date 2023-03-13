@@ -3,34 +3,16 @@ import Image from "../components/Image";
 import useScrollPercentage from "../components/useScrollPercentage"
 import styles from '../components/Styles/Contact.module.css';
 import PageChange from '../components/PageChange';
-import { useEffect, useState } from 'react';
 
 const Contact = () => {
 
     const [scrollRef, scrollPercentage] = useScrollPercentage();
     // black logo
 
-    const [playAnimation, setPlayAnimation] = useState(false);
-
-    
-    useEffect(() => {
-    const onPageLoad = () => {
-      setPlayAnimation(true);
-    };
-
-    if (document.readyState === 'complete') {
-      onPageLoad();
-    } else {
-      window.addEventListener('load', onPageLoad);
-      
-      return () => window.removeEventListener('load', onPageLoad);
-    }
-    }, []);
-
   return (
     
     <>
-    <PageChange pageLoaded={playAnimation} />
+    <PageChange />
     <Navbar scrollProgress={scrollPercentage} />
     <section className={styles.section}>
       

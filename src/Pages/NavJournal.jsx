@@ -2,35 +2,16 @@ import Navbar from "../components/Navbar/Navbar";
 import useScrollPercentage from '../components/useScrollPercentage';
 import styles from '../components/Styles/NavJournal.module.css';
 import PageChange from '../components/PageChange';
-import { useEffect, useState } from 'react';
 import ImageItem from "../components/ImageItem";
 
 const NavJournal = () => {
 
-    const [scrollRef, scrollPercentage] = useScrollPercentage();
-
-    const [playAnimation, setPlayAnimation] = useState(false);
-
-    
-    useEffect(() => {
-      window.scrollTo(0,0);
-    const onPageLoad = () => {
-      setPlayAnimation(true);
-    };
-
-    if (document.readyState === 'complete') {
-      onPageLoad();
-    } else {
-      window.addEventListener('load', onPageLoad);
-      
-      return () => window.removeEventListener('load', onPageLoad);
-    }
-    }, []);
+  const [scrollRef, scrollPercentage] = useScrollPercentage();
 
   return (
     <section className={styles.section} ref={scrollRef}>
 
-        <PageChange pageLoaded={playAnimation} />
+        <PageChange />
         <Navbar scrollProgress={scrollPercentage} />
 
         <div className={styles.mainContainer}>
