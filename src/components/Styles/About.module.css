@@ -3,17 +3,12 @@
     height: 100vh;
 }
 
-
 .headingContainer {
-    width: 100vw;
+    width: auto;
     height: 100vh;
     display: flex;
 }
-.headingImage {
-    width: 48.5vw;
-    height: 100vh;
-    background-color: black;
-}
+
 .headTextContainer {
     width: 50vw;
     height: 100vh;
@@ -32,7 +27,7 @@
 
 
 .aboutUsContainer {
-    width: 150vw;
+    width: auto;
     height: 100vh;
     background-color: black;
 }
@@ -110,6 +105,7 @@
     width: 45vw;
     height: 100vh;
     background-color: black;
+    object-fit: cover;
 }
 
 
@@ -268,14 +264,13 @@
         width: 100vw;
         height: 50vh;
         border-right: none;
-        border-bottom: 1px solid lightgray;
     }
     .headTitle {
-        width: 80%;
+        width: 100%;
         bottom: 2rem;
-        padding-inline: 2.5rem;
-        padding-left: 0;
-        font-size: 2.5rem;
+        padding-inline: 1.2rem;
+        margin-left: 0;
+        font-size: 3rem;
     }
 
     .aboutUsContainer {
@@ -291,7 +286,7 @@
         height: auto;
     }
     .aboutIntro {
-        padding-inline: 2.5rem;
+        padding-inline: 1.2rem;
         padding-top: 5rem;
         padding-bottom: 2rem;
     }
@@ -299,13 +294,13 @@
         font-size: 18px;
         line-height: 26px;
         width: 100%;
-        padding-inline: 2.5rem;
+        padding-inline: 1.2rem;
     }
     .aboutTitle {
         position: relative;
         bottom: 0;
-        font-size: 6rem;
-        padding-inline: 2.5rem;
+        font-size: 7rem;
+        padding-inline: 1.2rem;
         padding-top: 7rem;
         padding-bottom: 1rem;
     }
@@ -317,7 +312,8 @@
     }
     .processIntro {
         padding-top: 5rem;
-        padding-bottom: 7rem;
+        padding-bottom: 4rem;
+        padding-inline: 1.2rem;
     }
     .processTextContainer {
         width: 100%;
@@ -327,12 +323,14 @@
     .processTitle {
         font-size: 3rem;
         padding-bottom: 4rem;
+        padding-inline: 1.2rem;
     }
     .processDesc {
         width: 100%;
         font-size: 18px;
         line-height: 26px;
         padding-bottom: 12rem;
+        padding-inline: 1.2rem;
     }
     .processImage {
         width: 100vw;
@@ -347,7 +345,7 @@
         padding-top: 3rem;
     }
     .leadDesc {
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding-inline: 2rem;
         line-height: 3rem;
     }
@@ -363,11 +361,15 @@
 
     .awardsContainer {
         width: 100vw;
-        height: 120vh;
+        height: 100vh;
     }
     .awardsIntro {
         padding-top: 5rem;
         padding-bottom: 2rem;
+        padding-inline: 1.2rem;
+    }
+    .awardNamesContainer {
+        padding-inline: 1.2rem;
     }
     .awardName {
         font-size: 1rem;
@@ -377,8 +379,9 @@
         display: none;
     }
     .awardsTitle {
-        font-size: 7rem;
+        font-size: 8rem;
         bottom: 4rem;
+        padding-inline: 1.2rem;
     }
 
     .finalImage {

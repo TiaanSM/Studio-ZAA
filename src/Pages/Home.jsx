@@ -20,7 +20,6 @@ import Image from '../components/Image';
 import PageChange from '../components/PageChange';
 
 import useScrollPercentage from '../components/useScrollPercentage';
-import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 
 import '../App.css';
@@ -28,18 +27,7 @@ import '../App.css';
 
 const Home = () => {
 
-  // intro image zoom out animation when inview.
-  // import all images in one line.
-  // semantic elements.
-
   const [scrollRef, scrollPercentage] = useScrollPercentage();
-
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
-    threshold: .60,
-    triggerOnce: true
-  });
-
 
   return (
     <>
@@ -48,7 +36,6 @@ const Home = () => {
       
       <div className="scroll-container" ref={scrollRef} >
         <div className="content-container">
-        
 
         <header className={styles.header}>
           <a href="/home"><img src={logo} alt="logo" className={styles.logo} /></a>
@@ -176,7 +163,7 @@ const Home = () => {
           <img src="https://ik.imagekit.io/x29dtqzji/tr:w-750/sectionImage.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1674739236834" 
           alt="House-Image" className={secStyles.mainImage}/>
 
-          <div className={secStyles.journalContainer} ref={ref}>
+          <div className={secStyles.journalContainer}>
 
             <p className={secStyles.journalHeading}>Collaborating to create the 
               surprising with innovation that 

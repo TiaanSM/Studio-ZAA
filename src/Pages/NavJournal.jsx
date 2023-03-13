@@ -36,8 +36,8 @@ const NavJournal = () => {
                 <ImageItem 
                     imgSrc="https://ik.imagekit.io/x29dtqzji/tr:w-1300/pexels-expect-best-323776.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750704726"
                     imgAlt="house-image"
-                    title="Placeholder"
-                    link="Read More"
+                    title="COMING SOON"
+                    link=""
                     linkSrc="/"
                 />
         
@@ -57,8 +57,8 @@ const NavJournal = () => {
                 <ImageItem 
                     imgSrc="https://ik.imagekit.io/x29dtqzji/tr:w-1000/pexels-max-vakhtbovych-6316066.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750703423"
                     imgAlt="house-image"
-                    title="Placeholder"
-                    link="Read More"
+                    title="COMING SOON"
+                    link=""
                     height="500px"
                     linkSrc="/"
                 />
@@ -78,8 +78,8 @@ const NavJournal = () => {
                 <ImageItem 
                     imgSrc="https://ik.imagekit.io/x29dtqzji/tr:w-1000/lasse-moller-0TLId2pjnKk-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750699624"
                     imgAlt="house-image"
-                    title="Placeholder"
-                    link="Read More"
+                    title="COMING SOON"
+                    link=""
                     linkSrc="/"
                 />
 

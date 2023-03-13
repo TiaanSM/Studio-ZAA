@@ -10,7 +10,6 @@ import PageChange from '../components/PageChange';
 const ProjectTwo = () => {
 
   const [scrollRef, scrollPercentage] = useScrollPercentage();
-  const isMobile = window.innerWidth < 768;
 
   return (
     <section className={styles.section} ref={scrollRef}>

@@ -58,7 +58,8 @@
     text-align: center;
     position: absolute;
     color: white;
-    font-size: 11rem;
+    font-size: 6rem;
+    font-size: clamp(6rem, -0.48648648648648685rem + 13.513513513513514vw, 11rem);
     bottom: 1rem;
     font-weight: 400;
     opacity: 0;

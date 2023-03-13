@@ -152,10 +152,10 @@
     font-weight: 200;
 }
 
-.linkStyles {
+.linkText {
     color: black;
 }
-.linkStyles:hover {
+.linkText:hover {
     color: white;
 }
 
@@ -212,7 +212,7 @@
         position: fixed;
         left: 0;
         z-index: 20;
-        background-color: #3d4442;
+        background-color: #3d44426e;
     }
 
     .logo {

@@ -1,14 +1,12 @@
 import styles from '../components/Styles/About.module.css';
 import Navbar from '../components/Navbar/Navbar';
 import useScrollPercentage from '../components/useScrollPercentage';
-import Image from '../components/Image';
 import '../App.css';
 import PageChange from '../components/PageChange';
 
 const About = () => {
 
-    const [scrollRef, scrollPercentage] = useScrollPercentage();
-    const isMobile = window.innerWidth < 768;
+  const [scrollRef, scrollPercentage] = useScrollPercentage();
 
   return (
 
@@ -19,7 +17,6 @@ const About = () => {
           <div className="content-container">
 
         <div className={styles.headingContainer}>
-            <img src="" alt="house-image" className={styles.headingImage} />
             <div className={styles.headTextContainer}>
                 <h4 className={styles.headTitle}>Where innnovation fires inspiration and challenges the norm.</h4>
             </div>
@@ -28,11 +25,12 @@ const About = () => {
         <div className={styles.aboutUsContainer}>
             <div className={styles.aboutTextContainer}>
                 <h6 className={styles.aboutIntro}>About Us</h6>
-                <p className={styles.aboutDesc}>Studio RHE is a London based architecture and design practice with a global reputation for sustainable, bold and innovative residential, leisure and workplace environments. We are at the forefront of thinking on new trends in design, technology and architecture.<br/><br/>Our highly skilled team is renowned for the fast generation of concept ideas and hands-on project delivery. In tune with global fast changing markets, Studio RHE combines commercial know-how with creative originality.</p>
+                <p className={styles.aboutDesc}>Studio ZAA is a South african based architecture and design practice with a global reputation for sustainable, bold and innovative residential, leisure and workplace environments. We are at the forefront of thinking on new trends in design, technology and architecture.<br/><br/>Our highly skilled team is renowned for the fast generation of concept ideas and hands-on project delivery. In tune with global fast changing markets, Studio ZAA combines commercial know-how with creative originality.</p>
                 <h6 className={styles.aboutTitle}>South Africa</h6>
             </div>
-            <img src="" alt="house-image" className={styles.aboutImage} />
         </div>
+
+        <img src="https://ik.imagekit.io/x29dtqzji/tr:w-1000/pexels-vecislavas-popa-1643389.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750704863" alt="house-image" className={styles.processImage} />
 
         <div className={styles.processContainer}>
             <h6 className={styles.processIntro}>Our Process</h6>
@@ -41,63 +39,11 @@ const About = () => {
                 <p className={styles.processDesc}>Our award winning architecture is the result of meaningful collaborations with our clients. We revel in thinking, making, constructing. We never compromise.<br/><br/>Listening and translating to circumstance allows us to craft a highly detailed, low energy architecture, authentic and real. Weaving teaching and research with the latest technology into a rich studio culture that creates space for the exceptional.</p>
             </div>
         </div>
-        <img src="" alt="house-image" className={styles.processImage} />
 
         <div className={styles.leadershipContainer}>
             <h6 className={styles.leadTitle}>Leadership Team</h6>
             <p className={styles.leadDesc}>Studio ZAA is a team of over 15 problem solvers dedicated to making the physical world around us better for everyone.</p>
             <a href="/" className={styles.leadLink}>Let's Work Together</a>
-        </div>
-
-        <div className={styles.personelContainer}>
-            <Image 
-              width='490px' 
-              height="530px" 
-              src=""
-              imagealt="house-image" 
-              padding={isMobile ? '2rem' : '0'}   
-             
-              title="Wineland Golf Field"
-              link="View Project"
-              color="black"
-              displayTexts="inline-block"
-            />   
-            <Image 
-              width='490px' 
-              height="530px" 
-              src="" 
-              imagealt="house-image"    
-             
-              title="Wineland Golf Field"
-              link="View Project"
-              color="black"
-              displayTexts="inline-block"
-              padding={isMobile ? '2rem' : '0'}   
-            />   
-            <Image 
-              width='490px' 
-              height="530px" 
-              src=""
-              imagealt="house-image"    
-             
-              title="Wineland Golf Field"
-              link="View Project"
-              color="black"
-              displayTexts="inline-block"
-              padding={isMobile ? '2rem' : '0'}   
-            />   
-            <Image 
-              width='490px' 
-              height="530px" 
-              src=""
-              imagealt="house-image"    
-             
-              title="Wineland Golf Field"
-              link="View Project"
-              color="black"
-              displayTexts="inline-block"
-              padding={isMobile ? '2rem' : '0'}   
-            />   
         </div>
 
         <div className={styles.awardsContainer}>
@@ -117,7 +63,7 @@ const About = () => {
                 <h6 className={styles.awardsTitle}>Awards</h6>
         </div>
 
-        <img src="" alt="house-image" className={styles.finalImage} />
+        <img src="https://ik.imagekit.io/x29dtqzji/tr:w-1000/lasse-moller-0TLId2pjnKk-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750699624" alt="house-image" className={styles.finalImage} />
 
         <div className={styles.missionContainer}>
             <h6 className={styles.missionTitle}>Our Mission</h6>

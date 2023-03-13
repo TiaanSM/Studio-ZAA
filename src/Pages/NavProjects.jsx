@@ -36,8 +36,8 @@ const NavProjects = () => {
                 <ImageItem 
                   imgSrc="https://ik.imagekit.io/x29dtqzji/tr:w-1000/pexels-vecislavas-popa-1643389.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750704863"
                   imgAlt="house-image"
-                  title="Placeholder"
-                  link="View Project"
+                  title="COMING SOON"
+                  link=""
                   linkSrc="/"
                 />
         
@@ -57,8 +57,8 @@ const NavProjects = () => {
                 <ImageItem 
                   imgSrc="https://ik.imagekit.io/x29dtqzji/tr:w-1300/r-architecture-mHJiuZx2b8M-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750701286"
                   imgAlt="house-image"
-                  title="Placeholder"
-                  link="View Project"
+                  title="COMING SOON"
+                  link=""
                   height="500px"
                   linkSrc="/"
                 />
@@ -78,8 +78,8 @@ const NavProjects = () => {
                 <ImageItem 
                   imgSrc="https://ik.imagekit.io/x29dtqzji/tr:w-1200/pexels-max-vakhtbovych-8134821.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674750704444" 
                   imgAlt="house-image"
-                  title="Placeholder"
-                  link="View Project"
+                  title="COMING SOON"
+                  link=""
                   linkSrc="/"
                 />
 
