@@ -119,6 +119,7 @@
     left: 1.8rem;
     animation: titleAnimation 1s ease forwards;
     overflow: hidden;
+    padding-top: 2rem;
 }
 
 @keyframes titleAnimation {
@@ -149,7 +150,7 @@
     }
 
     .heading {
-        padding-inline: 3rem;
+        text-align: center;
         font-size: 3.5rem;
         line-height: 3.5rem;
         padding-top: 15rem;
@@ -193,11 +194,11 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
     .heading {
-        padding-inline: 1.5rem;
-        font-size: 2rem;
+        padding-inline: 1rem;
+        font-size: 1.7rem;
         line-height: 2rem;
         padding-top: 10rem;
     }
