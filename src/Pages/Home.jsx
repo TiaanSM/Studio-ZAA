@@ -38,7 +38,7 @@ const Home = () => {
         <div className="content-container">
 
         <header className={styles.header}>
-          <a href="/home"><img src={logo} alt="logo" className={styles.logo} /></a>
+          <a href="/"><img src={logo} alt="logo" className={styles.logo} /></a>
             <div className={styles.imageContainer}>
               <img 
                 className={styles.imageAnimated} 
